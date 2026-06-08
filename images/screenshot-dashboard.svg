@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <filter id="sh" x="-5%" y="-5%" width="115%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+    <!-- Chart gradient -->
+    <linearGradient id="line1-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00C170" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00C170" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="line2-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#4285F4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" rx="14" fill="#0f1923"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="900" height="52" rx="14" fill="#182230"/>
+  <rect x="0" y="38" width="900" height="14" fill="#182230"/>
+  <rect x="0" y="51" width="900" height="1" fill="#2a3a4a"/>
+
+  <!-- Title -->
+  <text x="24" y="33" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#e8eaed">Painel de SEO — Atlas Digital</text>
+  <!-- Tabs -->
+  <text x="500" y="33" font-family="Arial,sans-serif" font-size="12" fill="#8ab4f8" font-weight="600">ATUAL</text>
+  <text x="545" y="33" font-family="Arial,sans-serif" font-size="12" fill="#5f6368">7D</text>
+  <text x="571" y="33" font-family="Arial,sans-serif" font-size="12" fill="#5f6368">1M</text>
+  <text x="597" y="33" font-family="Arial,sans-serif" font-size="12" fill="#5f6368">3M</text>
+  <text x="623" y="33" font-family="Arial,sans-serif" font-size="12" fill="#5f6368">6M</text>
+  <text x="680" y="33" font-family="Arial,sans-serif" font-size="12" fill="#5f6368">AGRUP. POR: DIAS</text>
+  <text x="820" y="33" font-family="Arial,sans-serif" font-size="12" fill="#8ab4f8" font-weight="700">TODOS</text>
+  <text x="857" y="33" font-family="Arial,sans-serif" font-size="12" fill="#5f6368">SITES</text>
+
+  <!-- ===== METRIC CARDS ===== -->
+  <!-- Card 1: Posição Média -->
+  <rect x="16" y="64" width="202" height="88" rx="10" fill="#182230"/>
+  <rect x="16" y="64" width="202" height="88" rx="10" fill="none" stroke="#2a3a4a" stroke-width="1"/>
+  <text x="30" y="84" font-family="Arial,sans-serif" font-size="11" fill="#8ab4f8" font-weight="600" letter-spacing="0.5">POSIÇÃO MÉDIA</text>
+  <text x="30" y="118" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#e8eaed">34</text>
+  <text x="80" y="118" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#00C170">▲ 51</text>
+  <!-- sparkline card1 -->
+  <polyline points="30,140 55,136 80,138 105,130 130,128 155,125 180,120 205,116" stroke="#00C170" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Card 2: Previsão de Tráfego -->
+  <rect x="228" y="64" width="202" height="88" rx="10" fill="#182230"/>
+  <rect x="228" y="64" width="202" height="88" rx="10" fill="none" stroke="#2a3a4a" stroke-width="1"/>
+  <text x="242" y="84" font-family="Arial,sans-serif" font-size="11" fill="#8ab4f8" font-weight="600" letter-spacing="0.5">PREVISÃO DE TRÁFEGO</text>
+  <text x="242" y="118" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#e8eaed">520</text>
+  <text x="302" y="118" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#ea4335">▼ 245</text>
+  <polyline points="242,140 267,138 292,142 317,136 342,133 367,138 392,140 417,135" stroke="#ea4335" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Card 3: Visibilidade -->
+  <rect x="440" y="64" width="202" height="88" rx="10" fill="#182230"/>
+  <rect x="440" y="64" width="202" height="88" rx="10" fill="none" stroke="#2a3a4a" stroke-width="1"/>
+  <text x="454" y="84" font-family="Arial,sans-serif" font-size="11" fill="#8ab4f8" font-weight="600" letter-spacing="0.5">VISIBILIDADE DE BUSCA</text>
+  <text x="454" y="118" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#e8eaed">0,66</text>
+  <text x="524" y="118" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#00C170">▲ 0,34</text>
+  <polyline points="454,140 479,138 504,135 529,130 554,128 579,124 604,120 629,116" stroke="#00C170" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Card 4: Recursos SERP -->
+  <rect x="652" y="64" width="232" height="88" rx="10" fill="#182230"/>
+  <rect x="652" y="64" width="232" height="88" rx="10" fill="none" stroke="#2a3a4a" stroke-width="1"/>
+  <text x="666" y="84" font-family="Arial,sans-serif" font-size="11" fill="#8ab4f8" font-weight="600" letter-spacing="0.5">RECURSOS SERP</text>
+  <text x="666" y="118" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#e8eaed">2</text>
+  <text x="696" y="118" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#00C170">▲ 1</text>
+  <!-- bar chart mini -->
+  <rect x="740" y="128" width="12" height="12" rx="2" fill="#4285F4" opacity="0.4"/>
+  <rect x="755" y="120" width="12" height="20" rx="2" fill="#4285F4" opacity="0.5"/>
+  <rect x="770" y="115" width="12" height="25" rx="2" fill="#4285F4" opacity="0.7"/>
+  <rect x="785" y="108" width="12" height="32" rx="2" fill="#4285F4"/>
+  <rect x="800" y="112" width="12" height="28" rx="2" fill="#8ab4f8" opacity="0.6"/>
+  <rect x="815" y="106" width="12" height="34" rx="2" fill="#8ab4f8" opacity="0.7"/>
+  <rect x="830" y="100" width="12" height="40" rx="2" fill="#8ab4f8"/>
+  <rect x="845" y="94" width="12" height="46" rx="2" fill="#8ab4f8" opacity="0.8"/>
+
+  <!-- ===== CHART AREA ===== -->
+  <rect x="16" y="164" width="868" height="248" rx="10" fill="#182230"/>
+  <rect x="16" y="164" width="868" height="248" rx="10" fill="none" stroke="#2a3a4a" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="28" y="192" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">30</text>
+  <text x="28" y="232" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">25</text>
+  <text x="28" y="272" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">20</text>
+  <text x="28" y="312" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">15</text>
+  <text x="28" y="352" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">10</text>
+
+  <!-- Grid lines -->
+  <line x1="46" y1="188" x2="876" y2="188" stroke="#2a3a4a" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="46" y1="228" x2="876" y2="228" stroke="#2a3a4a" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="46" y1="268" x2="876" y2="268" stroke="#2a3a4a" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="46" y1="308" x2="876" y2="308" stroke="#2a3a4a" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="46" y1="348" x2="876" y2="348" stroke="#2a3a4a" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- X-axis labels -->
+  <text x="87" y="398" font-family="Arial,sans-serif" font-size="10" fill="#5f6368" text-anchor="middle">Set 23</text>
+  <text x="207" y="398" font-family="Arial,sans-serif" font-size="10" fill="#5f6368" text-anchor="middle">Set 24</text>
+  <text x="327" y="398" font-family="Arial,sans-serif" font-size="10" fill="#5f6368" text-anchor="middle">Set 25</text>
+  <text x="447" y="398" font-family="Arial,sans-serif" font-size="10" fill="#5f6368" text-anchor="middle">Set 26</text>
+  <text x="567" y="398" font-family="Arial,sans-serif" font-size="10" fill="#5f6368" text-anchor="middle">Set 27</text>
+  <text x="687" y="398" font-family="Arial,sans-serif" font-size="10" fill="#5f6368" text-anchor="middle">Set 28</text>
+  <text x="807" y="398" font-family="Arial,sans-serif" font-size="10" fill="#5f6368" text-anchor="middle">Set 29</text>
+
+  <!-- LABEL Y-AXIS -->
+  <text x="16" y="296" font-family="Arial,sans-serif" font-size="9" fill="#5f6368" transform="rotate(-90,16,296)" text-anchor="middle">POSIÇÃO MÉDIA</text>
+
+  <!-- LINE 1 — green (client) -->
+  <polyline points="87,348 147,338 207,340 267,318 327,314 387,316 447,310 507,320 567,316 627,312 687,318 747,310 807,300 867,296"
+    stroke="#00C170" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- dots -->
+  <circle cx="87" cy="348" r="5" fill="#00C170"/>
+  <circle cx="207" cy="340" r="5" fill="#00C170"/>
+  <circle cx="327" cy="314" r="5" fill="#00C170"/>
+  <circle cx="447" cy="310" r="5" fill="#00C170"/>
+  <circle cx="567" cy="316" r="5" fill="#00C170"/>
+  <circle cx="687" cy="318" r="5" fill="#00C170"/>
+  <circle cx="807" cy="300" r="5" fill="#00C170"/>
+
+  <!-- LINE 2 — blue -->
+  <polyline points="87,340 147,330 207,332 267,326 327,330 387,328 447,324 507,330 567,326 627,324 687,322 747,316 807,318 867,314"
+    stroke="#8ab4f8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- LINE 3 — cyan -->
+  <polyline points="87,332 147,322 207,328 267,318 327,320 387,322 447,316 507,322 567,318 627,314 687,316 747,308 807,312 867,308"
+    stroke="#24c4e0" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- LINE 4 — dark blue -->
+  <polyline points="87,322 147,312 207,318 267,300 327,306 387,308 447,300 507,308 567,294 627,302 687,298 747,290 807,296 867,288"
+    stroke="#3c4ab8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- LINE 5 — purple -->
+  <polyline points="87,316 147,298 207,304 267,286 327,292 387,296 447,282 507,290 567,278 627,286 687,276 747,268 807,274 867,266"
+    stroke="#a142f4" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Legend -->
+  <rect x="600" y="170" width="10" height="10" rx="2" fill="#00C170"/>
+  <text x="614" y="180" font-family="Arial,sans-serif" font-size="10" fill="#e8eaed">Seu site</text>
+  <rect x="660" y="170" width="10" height="10" rx="2" fill="#8ab4f8"/>
+  <text x="674" y="180" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">Concorrente 1</text>
+  <rect x="760" y="170" width="10" height="10" rx="2" fill="#24c4e0"/>
+  <text x="774" y="180" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">Concorrente 2</text>
+
+  <!-- ===== COMPETITOR TABLE ===== -->
+  <rect x="16" y="424" width="868" height="164" rx="10" fill="#182230"/>
+  <rect x="16" y="424" width="868" height="164" rx="10" fill="none" stroke="#2a3a4a" stroke-width="1"/>
+
+  <!-- Table header -->
+  <rect x="16" y="424" width="868" height="34" rx="10" fill="#1e2d3d"/>
+  <rect x="16" y="444" width="868" height="14" fill="#1e2d3d"/>
+  <text x="52" y="446" font-family="Arial,sans-serif" font-size="11" fill="#5f6368" font-weight="600" letter-spacing="0.5">ATIVO</text>
+  <text x="108" y="446" font-family="Arial,sans-serif" font-size="11" fill="#5f6368" font-weight="600" letter-spacing="0.5">TOP</text>
+  <text x="148" y="446" font-family="Arial,sans-serif" font-size="11" fill="#5f6368" font-weight="600" letter-spacing="0.5">CONCORRENTE</text>
+  <text x="820" y="446" font-family="Arial,sans-serif" font-size="11" fill="#5f6368" font-weight="600" letter-spacing="0.5">SCORE</text>
+
+  <!-- Row 1 — Concorrente 1 -->
+  <rect x="16" y="458" width="868" height="1" fill="#2a3a4a"/>
+  <!-- toggle on -->
+  <rect x="28" y="466" width="34" height="18" rx="9" fill="#00C170"/>
+  <circle cx="54" cy="475" r="7" fill="#fff"/>
+  <text x="108" y="480" font-family="Arial,sans-serif" font-size="13" fill="#e8eaed">1</text>
+  <!-- Google favicon -->
+  <rect x="140" y="467" width="16" height="16" rx="3" fill="#4285F4"/>
+  <text x="148" y="479" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff">G</text>
+  <text x="162" y="480" font-family="Arial,sans-serif" font-size="13" fill="#8ab4f8">concorrente1.com.br</text>
+  <text x="162" y="494" font-family="Arial,sans-serif" font-size="11" fill="#5f6368">Especialistas em dermatologia estética em Curitiba e região...</text>
+  <text x="820" y="480" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#e8eaed">77</text>
+
+  <!-- Row 2 — Concorrente 2 -->
+  <rect x="16" y="506" width="868" height="1" fill="#2a3a4a"/>
+  <rect x="28" y="514" width="34" height="18" rx="9" fill="#2a3a4a"/>
+  <circle cx="37" cy="523" r="7" fill="#fff"/>
+  <text x="108" y="527" font-family="Arial,sans-serif" font-size="13" fill="#e8eaed">2</text>
+  <rect x="140" y="515" width="16" height="16" rx="3" fill="#ea4335"/>
+  <text x="148" y="527" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff">C</text>
+  <text x="162" y="527" font-family="Arial,sans-serif" font-size="13" fill="#8ab4f8">clinicaconcorrente.com.br</text>
+  <text x="162" y="541" font-family="Arial,sans-serif" font-size="11" fill="#5f6368">Consultas dermatológicas com hora marcada. Batel e Água Verde...</text>
+  <text x="820" y="527" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#e8eaed">64</text>
+
+  <!-- Row 3 — Concorrente 3 -->
+  <rect x="16" y="553" width="868" height="1" fill="#2a3a4a"/>
+  <rect x="28" y="560" width="34" height="18" rx="9" fill="#2a3a4a"/>
+  <circle cx="37" cy="569" r="7" fill="#fff"/>
+  <text x="108" y="574" font-family="Arial,sans-serif" font-size="13" fill="#e8eaed">3</text>
+  <rect x="140" y="561" width="16" height="16" rx="3" fill="#fbbc05"/>
+  <text x="148" y="573" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff">S</text>
+  <text x="162" y="574" font-family="Arial,sans-serif" font-size="13" fill="#8ab4f8">skincarecuritiba.com.br</text>
+  <text x="162" y="588" font-family="Arial,sans-serif" font-size="11" fill="#5f6368">Tratamentos de pele: acne, manchas, rejuvenescimento. Curitiba-PR...</text>
+  <text x="820" y="574" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#e8eaed">58</text>
+</svg>
