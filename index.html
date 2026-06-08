@@ -170,12 +170,12 @@ h3 {
 .site-header__inner {
   max-width: var(--container); margin: 0 auto; height: 100%;
   padding-inline: var(--container-pad);
-  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  display: flex; align-items: stretch; justify-content: space-between; gap: 20px;
 }
 .site-header__brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .site-header__mark { height: 38px; width: auto; }
 .site-header__wordmark { color: #000; font-weight: 700; letter-spacing: 0.06em; font-size: 14px; }
-.site-header__nav { display: flex; gap: 28px; }
+.site-header__nav { display: flex; gap: 28px; align-items: center; }
 .site-header__link {
   color: #000; text-decoration: none; font-size: 14px; font-weight: 500;
   transition: color var(--dur-2) var(--ease-standard);
@@ -192,12 +192,12 @@ h3 {
 .site-header__dropdown {
   display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
   background: #fff; border: 1px solid #e5e5e5; border-radius: var(--radius-lg);
-  padding: 8px; padding-top: 22px; min-width: 250px; box-shadow: 0 20px 50px rgba(0,0,0,.6);
+  padding: 8px; min-width: 250px; box-shadow: 0 20px 50px rgba(0,0,0,.6);
   margin-top: 0;
 }
-/* bridge invisível que preenche o gap e mantém o hover */
+/* bridge invisível cobre qualquer gap residual */
 .site-header__dropdown::before {
-  content: ''; position: absolute; top: -14px; left: 0; right: 0; height: 14px;
+  content: ''; position: absolute; top: -8px; left: 0; right: 0; height: 8px;
 }
 .site-header__dropdown.is-visible { display: block; }
 .site-header__dropdown a {
@@ -1248,13 +1248,12 @@ document.querySelectorAll('.faq__q').forEach(function (btn) {
   });
 });
 
-// Dropdown de serviços — hover com delay (sem sumir no gap)
+// Dropdown de serviços — hover no item pai (72px), sem gap
 (function () {
   var svcItem = document.querySelector('.site-header__item');
   if (!svcItem) return;
-  var svcLink = svcItem.querySelector('.site-header__link');
   var svcDropdown = svcItem.querySelector('.site-header__dropdown');
-  if (!svcLink || !svcDropdown) return;
+  if (!svcDropdown) return;
 
   var hideTimer = null;
 
@@ -1265,23 +1264,25 @@ document.querySelectorAll('.faq__q').forEach(function (btn) {
   function hide() {
     hideTimer = setTimeout(function () {
       svcDropdown.classList.remove('is-visible');
-    }, 350);
+    }, 150);
   }
 
-  svcLink.addEventListener('mouseenter', show);
-  svcLink.addEventListener('mouseleave', hide);
-  svcDropdown.addEventListener('mouseenter', show);
-  svcDropdown.addEventListener('mouseleave', hide);
+  // Eventos no item pai — mouseleave NÃO dispara ao mover para filho (dropdown)
+  svcItem.addEventListener('mouseenter', show);
+  svcItem.addEventListener('mouseleave', hide);
 
-  // touch: primeiro toque mostra dropdown, segundo navega
-  svcLink.addEventListener('click', function (e) {
-    if (window.matchMedia('(hover: none)').matches) {
-      if (!svcDropdown.classList.contains('is-visible')) {
-        e.preventDefault();
-        show();
+  // Touch: primeiro toque mostra, segundo navega
+  var svcLink = svcItem.querySelector('.site-header__link');
+  if (svcLink) {
+    svcLink.addEventListener('click', function (e) {
+      if (window.matchMedia('(hover: none)').matches) {
+        if (!svcDropdown.classList.contains('is-visible')) {
+          e.preventDefault();
+          show();
+        }
       }
-    }
-  });
+    });
+  }
 
   document.addEventListener('click', function (e) {
     if (!svcItem.contains(e.target)) {
