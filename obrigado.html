@@ -18,8 +18,9 @@
   --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-font-smoothing: antialiased; }
+html { overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 body {
+  overflow-x: hidden;
   font-family: var(--font-sans);
   margin: 0; padding: 0;
   background: #000;
