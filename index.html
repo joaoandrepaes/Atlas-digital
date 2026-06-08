@@ -193,12 +193,11 @@ h3 {
   display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
   background: #fff; border: 1px solid #e5e5e5; border-radius: var(--radius-lg);
   padding: 8px; min-width: 250px; box-shadow: 0 20px 50px rgba(0,0,0,.6);
-  margin-top: 0;
+  margin-top: -1px; /* sobe 1px para eliminar qualquer gap */
+  z-index: 100;
 }
-/* bridge invisível cobre qualquer gap residual */
-.site-header__dropdown::before {
-  content: ''; position: absolute; top: -8px; left: 0; right: 0; height: 8px;
-}
+/* hover CSS: o dropdown é filho do item, então :hover no pai mantém o dropdown */
+.site-header__item:hover .site-header__dropdown { display: block; }
 .site-header__dropdown.is-visible { display: block; }
 .site-header__dropdown a {
   display: block; padding: 11px 14px; border-radius: var(--radius-md);
@@ -1248,42 +1247,25 @@ document.querySelectorAll('.faq__q').forEach(function (btn) {
   });
 });
 
-// Dropdown de serviços — hover no item pai (72px), sem gap
+// Dropdown de serviços — CSS :hover faz o trabalho; JS só para touch e fechar
 (function () {
   var svcItem = document.querySelector('.site-header__item');
   if (!svcItem) return;
   var svcDropdown = svcItem.querySelector('.site-header__dropdown');
-  if (!svcDropdown) return;
-
-  var hideTimer = null;
-
-  function show() {
-    clearTimeout(hideTimer);
-    svcDropdown.classList.add('is-visible');
-  }
-  function hide() {
-    hideTimer = setTimeout(function () {
-      svcDropdown.classList.remove('is-visible');
-    }, 150);
-  }
-
-  // Eventos no item pai — mouseleave NÃO dispara ao mover para filho (dropdown)
-  svcItem.addEventListener('mouseenter', show);
-  svcItem.addEventListener('mouseleave', hide);
-
-  // Touch: primeiro toque mostra, segundo navega
   var svcLink = svcItem.querySelector('.site-header__link');
-  if (svcLink) {
-    svcLink.addEventListener('click', function (e) {
-      if (window.matchMedia('(hover: none)').matches) {
-        if (!svcDropdown.classList.contains('is-visible')) {
-          e.preventDefault();
-          show();
-        }
-      }
-    });
-  }
+  if (!svcDropdown || !svcLink) return;
 
+  // Touch: primeiro toque abre o dropdown, segundo navega
+  svcLink.addEventListener('click', function (e) {
+    if (window.matchMedia('(hover: none)').matches) {
+      if (!svcDropdown.classList.contains('is-visible')) {
+        e.preventDefault();
+        svcDropdown.classList.add('is-visible');
+      }
+    }
+  });
+
+  // Fechar ao clicar fora
   document.addEventListener('click', function (e) {
     if (!svcItem.contains(e.target)) {
       svcDropdown.classList.remove('is-visible');
