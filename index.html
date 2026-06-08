@@ -190,9 +190,14 @@ h3 {
 /* dropdown de serviços */
 .site-header__item { position: relative; display: flex; align-items: center; }
 .site-header__dropdown {
-  display: none; position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%);
+  display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
   background: #fff; border: 1px solid #e5e5e5; border-radius: var(--radius-lg);
-  padding: 8px; min-width: 250px; box-shadow: 0 20px 50px rgba(0,0,0,.6);
+  padding: 8px; padding-top: 22px; min-width: 250px; box-shadow: 0 20px 50px rgba(0,0,0,.6);
+  margin-top: 0;
+}
+/* bridge invisível que preenche o gap e mantém o hover */
+.site-header__dropdown::before {
+  content: ''; position: absolute; top: -14px; left: 0; right: 0; height: 14px;
 }
 .site-header__item:hover .site-header__dropdown,
 .site-header__dropdown.is-visible { display: block; }
