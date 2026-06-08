@@ -1,0 +1,1264 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agência de SEO em Curitiba | Sites e Google Meu Negócio | Atlas Digital</title>
+  <meta name="description" content="Agência de SEO em Curitiba especializada em posicionamento orgânico, Google Meu Negócio e criação de sites para clínicas, escritórios e PMEs. Diagnóstico gratuito.">
+  <meta name="keywords" content="posicionamento Google Curitiba, agência marketing digital Curitiba, Google Meu Negócio Curitiba, criação de sites Curitiba">
+  <meta name="author" content="Atlas Digital">
+  <link rel="canonical" href="https://atlasdigital.com.br/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atlasdigital.com.br/">
+  <meta property="og:title" content="Agência de SEO em Curitiba | Sites e Google Meu Negócio | Atlas Digital">
+  <meta property="og:description" content="Sua empresa no topo do Google e das respostas de IA em Curitiba.">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" href="atlas-design-extracted/assets/logo-atlas-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+/* =================================================================
+   ATLAS DIGITAL — design system (do site antigo)
+   ================================================================= */
+:root {
+  --atlas-black:        #000000;
+  --atlas-white:        #FFFFFF;
+  --atlas-green:        #00E676;
+  --atlas-green-dark:   #00b85a;
+  --atlas-ink:          #171717;
+  --atlas-gray-900:     #171717;
+  --atlas-gray-700:     #404040;
+  --atlas-gray-500:     #737373;
+  --atlas-gray-300:     #d4d4d4;
+  --atlas-gray-200:     #e5e5e5;
+  --atlas-gray-100:     #f5f5f5;
+  --atlas-on-black-1:   #FFFFFF;
+  --atlas-on-black-2:   #d4d4d4;
+  --atlas-on-black-3:   #a3a3a3;
+  --atlas-on-black-line:#262626;
+
+  --fg-default:         var(--atlas-ink);
+  --fg-strong:          var(--atlas-black);
+  --fg-muted:           var(--atlas-gray-500);
+  --fg-on-black:        var(--atlas-on-black-1);
+  --fg-on-black-muted:  var(--atlas-on-black-2);
+
+  --accent:             var(--atlas-green);
+  --accent-dark:        var(--atlas-green-dark);
+
+  --focus-ring:         0 0 0 3px rgba(0, 230, 118, 0.45);
+  --atlas-glow:         0 0 24px rgba(0,230,118,0.55);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --fw-semi:    600;
+  --fw-bold:    700;
+  --fw-black:   800;
+  --fw-ultra:   900;
+
+  --fs-h2:         clamp(30px, 3.2vw, 44px);
+  --fs-h3:         clamp(22px, 2vw, 28px);
+  --fs-body-lg:    20px;
+  --fs-body:       17px;
+  --fs-eyebrow:    13px;
+
+  --lh-tight:   1.05;
+  --lh-snug:    1.2;
+  --lh-relaxed: 1.6;
+
+  --tracking-tight:  -0.02em;
+  --tracking-wide:   0.14em;
+
+  --section-y: clamp(40px, 5vw, 72px);
+  --container: 1200px;
+  --container-pad: clamp(20px, 4vw, 48px);
+
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   20px;
+  --radius-full: 999px;
+
+  --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --dur-2: 200ms;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-default);
+  background: #000;
+  margin: 0;
+  padding-top: 72px;
+}
+h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+ul, ol { margin: 0; padding: 0; }
+img { display: block; max-width: 100%; }
+a { color: var(--accent-dark); text-decoration: none; transition: color var(--dur-2) var(--ease-standard); }
+
+h2 {
+  font-size: var(--fs-h2); font-weight: var(--fw-bold);
+  line-height: var(--lh-snug); letter-spacing: var(--tracking-tight); color: #fff;
+}
+h3 {
+  font-size: var(--fs-h3); font-weight: var(--fw-semi);
+  line-height: var(--lh-snug); color: #fff;
+}
+
+.lead { font-size: var(--fs-body-lg); line-height: 1.5; color: #d4d4d4; }
+.eyebrow {
+  font-size: var(--fs-eyebrow); font-weight: var(--fw-semi);
+  letter-spacing: var(--tracking-wide); color: var(--accent); text-transform: uppercase;
+}
+.on-black       { color: #ffffff; }
+.on-black-muted { color: #d4d4d4; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: var(--container-pad);
+}
+.section-head { margin-bottom: clamp(40px, 5vw, 64px); max-width: 56ch; }
+.section-head--center { margin-inline: auto; text-align: center; }
+.section-head h2 { margin: 0 0 12px; }
+.section-head .lead { color: #a3a3a3; }
+.section-head--dark .lead { color: #d4d4d4; }
+.section-head--dark h2 { color: #fff; }
+
+/* ---------- BOTÕES ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 22px; border-radius: var(--radius-md);
+  font-family: inherit; font-size: 15px; font-weight: 600;
+  border: 0; cursor: pointer; text-decoration: none;
+  transition: background var(--dur-2) var(--ease-standard),
+              color var(--dur-2) var(--ease-standard),
+              transform 80ms var(--ease-standard);
+  white-space: nowrap;
+}
+.btn:active { transform: scale(0.98); }
+.btn--sm { padding: 10px 16px; font-size: 14px; }
+.btn--primary { background: var(--atlas-green); color: #000; box-shadow: 0 0 18px rgba(0,230,118,0.45); }
+.btn--primary:hover { background: var(--atlas-green-dark); color: #fff; }
+.btn--outline-light { background: transparent; color: #fff; border: 1.5px solid #fff; }
+.btn--outline-light:hover { background: #fff; color: #000; }
+.btn--on-green { background: #fff; color: var(--atlas-green-dark); }
+.btn--on-green:hover { background: #000; color: var(--atlas-green); }
+
+.link-ghost {
+  display: inline-flex; align-items: center;
+  color: var(--atlas-green); font-weight: 600; font-size: 15px;
+  text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 2px;
+  transition: color var(--dur-2) var(--ease-standard), border-color var(--dur-2) var(--ease-standard);
+}
+.link-ghost:hover { color: #fff; border-bottom-color: #000; }
+.link-ghost--light { color: var(--atlas-green); }
+.link-ghost--light:hover { color: #fff; border-bottom-color: #fff; }
+
+/* ---------- HEADER ---------- */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 72px; background: #fff; z-index: 50;
+  border-bottom: 1px solid #e5e5e5;
+}
+.site-header__inner {
+  max-width: var(--container); margin: 0 auto; height: 100%;
+  padding-inline: var(--container-pad);
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.site-header__brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.site-header__mark { height: 38px; width: auto; }
+.site-header__wordmark { color: #000; font-weight: 700; letter-spacing: 0.06em; font-size: 14px; }
+.site-header__nav { display: flex; gap: 28px; }
+.site-header__link {
+  color: #000; text-decoration: none; font-size: 14px; font-weight: 500;
+  transition: color var(--dur-2) var(--ease-standard);
+  position: relative; padding: 4px 0;
+}
+.site-header__link:hover,
+.site-header__link.is-active { color: var(--atlas-green); }
+.site-header__link.is-active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
+  height: 2px; background: var(--atlas-green);
+}
+/* dropdown de serviços */
+.site-header__item { position: relative; display: flex; align-items: center; }
+.site-header__dropdown {
+  display: none; position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%);
+  background: #fff; border: 1px solid #e5e5e5; border-radius: var(--radius-lg);
+  padding: 8px; min-width: 250px; box-shadow: 0 20px 50px rgba(0,0,0,.6);
+}
+.site-header__item:hover .site-header__dropdown { display: block; }
+.site-header__dropdown a {
+  display: block; padding: 11px 14px; border-radius: var(--radius-md);
+  font-size: 14px; color: #404040; font-weight: 500;
+}
+.site-header__dropdown a:hover { background: #f5f5f5; color: var(--atlas-green); }
+.site-header__caret { margin-left: 4px; }
+
+.site-header__menu-btn {
+  display: none; background: none; border: none; cursor: pointer;
+  color: #000; padding: 4px;
+}
+@media (max-width: 820px) {
+  .site-header__nav { display: none; }
+  .site-header__nav.is-open {
+    display: flex; flex-direction: column; gap: 0;
+    position: absolute; top: 72px; left: 0; right: 0;
+    background: #fff; padding: 16px var(--container-pad) 24px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .site-header__nav.is-open .site-header__link { padding: 12px 0; font-size: 16px; }
+  .site-header__nav.is-open .site-header__dropdown {
+    display: block; position: static; transform: none; border: 0; box-shadow: none;
+    background: transparent; padding: 0 0 0 16px; min-width: 0;
+  }
+  .site-header__nav.is-open .site-header__dropdown a { padding: 10px 0; }
+  .site-header__menu-btn { display: block; }
+  .site-header .btn { display: none; }
+}
+
+/* ---------- HERO ---------- */
+.hero { background: #060d08; padding: clamp(32px, 4vw, 52px) 0 clamp(72px, 9vw, 100px); position: relative; z-index: 1; overflow: visible; }
+.hero__inner {
+  display: grid; grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(40px, 6vw, 80px); align-items: center;
+}
+.hero__copy .eyebrow { margin-bottom: 24px; }
+.hero__headline {
+  font-size: clamp(32px, 4.2vw, 58px); font-weight: 800;
+  line-height: 1.08; letter-spacing: -0.025em; color: #fff;
+  margin: 0 0 28px;
+}
+.hero__sub { font-size: 18px; line-height: 1.55; color: #d4d4d4; max-width: 48ch; margin: 0 0 36px; }
+.hero__ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+@media (max-width: 900px) { .hero__inner { grid-template-columns: 1fr; } }
+
+/* ---------- GSEARCH ---------- */
+.gsearch {
+  background: #fff; border-radius: 18px; padding: 22px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5); position: relative;
+}
+.gsearch::before {
+  content: ""; position: absolute; top: -18px; left: -18px; right: 36px; bottom: 36px;
+  border: 2px solid var(--atlas-green); border-radius: 18px; z-index: -1; pointer-events: none;
+}
+.gsearch__bar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; border: 1px solid #e5e5e5; border-radius: 999px;
+  margin-bottom: 14px; color: #737373;
+}
+.gsearch__query { color: #171717; font-size: 14px; }
+.gsearch__caret {
+  display: inline-block; width: 1px; background: #171717;
+  margin-left: 1px; animation: blink 1s steps(2) infinite; height: 14px; vertical-align: middle;
+}
+@keyframes blink { to { background: transparent; } }
+.gsearch__chips { display: flex; gap: 8px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid #f0f0f0; }
+.gsearch__chip { font-size: 11px; padding: 4px 10px; border-radius: 999px; color: #404040; border: 1px solid #e5e5e5; }
+.gsearch__chip.is-on { background: #000; color: #fff; border-color: #000; }
+.gsearch__result { padding: 12px 0; border-bottom: 1px solid #f5f5f5; position: relative; }
+.gsearch__result:last-child { border: 0; }
+.gsearch__result.is-top { padding-left: 16px; border-left: 3px solid var(--atlas-green); margin-left: -16px; }
+.gsearch__badge {
+  display: inline-block; background: var(--atlas-green); color: #000;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 4px; margin-bottom: 6px;
+}
+.gsearch__url { font-size: 11px; color: #737373; margin-bottom: 4px; }
+.gsearch__title { font-size: 16px; font-weight: 600; color: #15803D; margin-bottom: 4px; line-height: 1.3; }
+.gsearch__snippet { font-size: 12px; color: #404040; line-height: 1.45; }
+.gsearch__stars { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.gsearch__stars > span:first-child { color: #f59e0b; font-size: 12px; }
+.gsearch__rating { font-size: 11px; color: #737373; }
+
+/* ── PHONE MOCKUP ── */
+.hero__visual { position: relative; }
+.hero__phone-wrap {
+  position: relative; display: flex;
+  align-items: center; justify-content: center;
+}
+/* animations removed for Core Web Vitals */
+
+.hero__phone {
+  position: relative; z-index: 2;
+  width: clamp(240px, 27vw, 310px);
+  background: #080f0a; border-radius: 44px; padding: 14px 10px;
+  border: 1.5px solid #1c3224;
+  box-shadow: 0 40px 100px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.04), inset 0 1px 0 rgba(255,255,255,.06);
+}
+.hero__phone::before {
+  content: ''; display: block; width: 68px; height: 5px;
+  background: #1a1a1a; border-radius: 3px; margin: 0 auto 10px;
+}
+.hero__phone-screen {
+  background: #f9fafb; border-radius: 34px; padding: 14px 12px 12px; overflow: hidden;
+}
+.hero__phone-screen .gsearch { box-shadow: none; border-radius: 10px; padding: 14px; margin: 0; }
+.hero__phone-screen .gsearch::before { display: none; }
+
+/* ── BG LOGO ── */
+.hero__bg-logo {
+  position: absolute;
+  right: -6%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(56vw, 560px);
+  opacity: .07;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+.hero__bg-logo svg { width: 100%; height: auto; display: block; }
+
+/* ── NOTIFICATION CARDS ── */
+.hero__notif {
+  position: absolute; z-index: 5;
+  display: flex; align-items: center; gap: 10px;
+  background: rgba(6,12,8,.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0,230,118,.2); border-radius: 14px; padding: 9px 13px;
+  min-width: 178px; max-width: 220px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.03);
+}
+.hero__notif--1 { top: -4px; right: -20px; }
+.hero__notif--2 { bottom: 56px; right: -28px; }
+.hero__notif--3 { top: 42%; left: -44px; }
+
+
+
+
+.notif__icon {
+  width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 15px;
+}
+.notif__icon--google { background: rgba(66,133,244,.14); }
+.notif__icon--ai     { background: rgba(0,230,118,.12); color: var(--atlas-green); font-size: 18px; font-weight: 700; }
+.notif__icon--maps   { background: rgba(234,67,53,.12); }
+.notif__body { min-width: 0; }
+.notif__title { font-size: 11.5px; font-weight: 600; color: #e0ede4; line-height: 1.3; white-space: nowrap; }
+.notif__sub   { font-size: 10.5px; color: #4d7258; margin-top: 2px; white-space: nowrap; }
+.notif__dot   { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-left: auto; background: var(--atlas-green); box-shadow: 0 0 8px rgba(0,230,118,.65); }
+/* sitelinks (criação de sites) */
+.gsearch__sitelinks { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.gsearch__sitelink { font-size: 11px; color: #15803D; border: 1px solid #e5e5e5; border-radius: 6px; padding: 3px 9px; }
+/* AI overview (SEO/IAs) */
+.gsearch__ai {
+  background: #f5fbf7; border: 1px solid #d3eddd; border-radius: 12px;
+  padding: 14px 16px; margin-bottom: 14px;
+}
+.gsearch__ai-label {
+  display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: #15803D; margin-bottom: 8px;
+}
+.gsearch__ai-text { font-size: 12px; color: #171717; line-height: 1.5; }
+.gsearch__ai-text strong { color: #15803D; }
+.gsearch__ai-sources { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.gsearch__ai-source { font-size: 10px; color: #1a73e8; background: #e8f0fe; padding: 2px 8px; border-radius: 10px; }
+
+/* ---------- CREDIBILITY ---------- */
+.credibility { background: #000; padding: 56px 0; border-top: 1px solid #262626; border-bottom: 1px solid #262626; }
+.credibility__inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.credibility__num {
+  font-size: clamp(36px, 5vw, 56px); font-weight: 800;
+  color: var(--atlas-green-dark); letter-spacing: -0.025em;
+  line-height: 1; margin-bottom: 8px; font-variant-numeric: tabular-nums;
+}
+.credibility__label { font-size: 14px; color: #a3a3a3; max-width: 22ch; line-height: 1.4; }
+@media (max-width: 760px) { .credibility__inner { grid-template-columns: 1fr 1fr; row-gap: 32px; } }
+
+/* ---------- SERVICES ---------- */
+.services { padding: clamp(56px, 7vw, 88px) 0 var(--section-y); background: #060d08; }
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+@media (max-width: 860px) {
+  .services__grid { grid-template-columns: 1fr; }
+}
+
+.svc-card {
+  background: #0d0d0d;
+  padding: 36px 32px 32px;
+  display: flex; flex-direction: column; gap: 0;
+  text-decoration: none; color: inherit;
+  transition: background 160ms;
+  position: relative;
+}
+.svc-card:hover { background: #111; }
+.svc-card::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: var(--atlas-green);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 220ms var(--ease-standard);
+}
+.svc-card:hover::after { transform: scaleX(1); }
+
+.svc-card__icon {
+  width: 36px; height: 36px;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--atlas-green);
+  margin-bottom: 20px;
+  background: #111;
+}
+
+.svc-card__cat {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #4a4a4a;
+  margin-bottom: 8px;
+}
+
+.svc-card__title {
+  font-size: 18px; font-weight: 700; color: #fff;
+  line-height: 1.3; letter-spacing: -0.01em;
+  margin: 0 0 12px;
+}
+
+.svc-card__desc {
+  font-size: 14px; color: #666; line-height: 1.65;
+  margin: 0 0 24px;
+}
+
+.svc-card__divider {
+  height: 1px; background: #1a1a1a; margin: 0 0 20px;
+}
+
+.svc-card__bullets {
+  list-style: none; padding: 0; margin: 0 0 28px; flex: 1;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.svc-card__bullets li {
+  font-size: 13px; color: #888; line-height: 1.5;
+  padding-left: 14px; position: relative;
+}
+.svc-card__bullets li::before {
+  content: '–';
+  position: absolute; left: 0;
+  color: var(--atlas-green); font-weight: 700;
+}
+
+.svc-card__cta {
+  font-size: 13px; font-weight: 600; color: var(--atlas-green);
+  text-decoration: none; display: inline-flex; align-items: center; gap: 4px;
+  margin-top: auto;
+  transition: gap 160ms;
+}
+.svc-card:hover .svc-card__cta { gap: 8px; }
+
+.bundle-card {
+  background: #000; color: #fff; border: 2px solid var(--atlas-green);
+  border-radius: var(--radius-xl); padding: 30px clamp(28px,4vw,44px);
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 28px; margin-top: 8px;
+}
+@media (max-width: 760px) { .bundle-card { grid-template-columns: 1fr; } }
+.bundle-card__badge {
+  display: inline-block; background: var(--atlas-green); color: #000;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 5px 11px; border-radius: 999px; margin-bottom: 14px;
+}
+.bundle-card__title {
+  font-size: clamp(28px,3vw,36px); font-weight: 800;
+  letter-spacing: -0.02em; margin: 0 0 10px; color: #fff;
+}
+.bundle-card__desc { font-size: 16px; color: #d4d4d4; margin: 0; max-width: 56ch; line-height: 1.55; }
+.services__alt { text-align: center; margin-top: 28px; }
+
+/* ---------- HOW ---------- */
+.how { padding: var(--section-y) 0; background: #030805; border-top: 1px solid #142018; }
+.how__inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: clamp(40px,6vw,80px); align-items: center;
+}
+@media (max-width: 860px) { .how__inner { grid-template-columns: 1fr; } }
+
+/* Left — timeline */
+.how__label { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--atlas-green); margin-bottom: 18px; }
+.how__heading { font-size: clamp(24px,3vw,40px); font-weight: 800; color: #fff; line-height: 1.1; margin: 0 0 12px; }
+.how__lead { font-size: 16px; color: #7a9480; margin: 0 0 36px; line-height: 1.55; }
+.how__timeline { position: relative; list-style: none; padding: 0; margin: 0 0 36px; }
+.how__timeline::before {
+  content: ''; position: absolute;
+  left: 14px; top: 28px; bottom: 28px;
+  width: 1px; background: #1a3020;
+}
+.how__step { display: flex; gap: 20px; align-items: flex-start; padding-bottom: 28px; }
+.how__step:last-child { padding-bottom: 0; }
+.how__circle {
+  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+  background: #0a1a0e; border: 2px solid var(--atlas-green);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; color: var(--atlas-green);
+  position: relative; z-index: 1;
+}
+.how__step-body { padding-top: 4px; }
+.how__step-title { font-size: 16px; font-weight: 700; color: #e8f0eb; margin: 0 0 4px; }
+.how__step-desc { font-size: 14px; color: #5a7a62; line-height: 1.55; margin: 0; }
+
+/* Right — stacked screenshots */
+.how__screens {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 340px;
+}
+.how__screen {
+  position: absolute;
+  width: clamp(260px, 52%, 340px);
+  line-height: 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.how__screen img {
+  width: 100%;
+  display: block;
+}
+.how__screen--front {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.09),
+    0 4px 12px rgba(0,0,0,.3),
+    0 20px 48px rgba(0,0,0,.55),
+    0 40px 80px rgba(0,0,0,.4);
+}
+.how__screen--back {
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  filter: brightness(0.6) saturate(0.65);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.05),
+    0 8px 28px rgba(0,0,0,.4),
+    0 32px 60px rgba(0,0,0,.5);
+}
+@media (max-width: 860px) {
+  .how__screens { height: 280px; }
+  .how__screen { width: clamp(220px, 58%, 300px); }
+}
+
+/* ---------- CASES ---------- */
+.cases { padding: var(--section-y) 0 clamp(12px, 1.5vw, 20px); background: #030805; border-top: 1px solid #142018; }
+.cases__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+@media (max-width: 760px) { .cases__grid { grid-template-columns: 1fr; } }
+
+.case-card {
+  background: #0b1610;
+  border: 1px solid #1a2f20;
+  border-top: 3px solid var(--atlas-green);
+  border-radius: var(--radius-lg); padding: 32px;
+  display: flex; flex-direction: column; gap: 20px;
+  position: relative; overflow: hidden;
+  box-shadow: 0 4px 40px rgba(0,230,118,0.07), 0 1px 6px rgba(0,0,0,0.5);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.case-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 20% 0%, rgba(0,230,118,0.07) 0%, transparent 65%);
+  pointer-events: none;
+}
+.case-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 56px rgba(0,230,118,0.14), 0 2px 8px rgba(0,0,0,0.6);
+}
+.case-card__meta { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.case-card__name { font-weight: 800; color: #fff; font-size: 17px; }
+.case-card__seg {
+  font-size: 11px; color: var(--atlas-green); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  background: rgba(0,230,118,0.1); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(0,230,118,0.2);
+}
+.case-card__problem { font-size: 14px; color: #8fac96; line-height: 1.6; margin: 0; }
+.case-card__result {
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 16px 0; border-top: 1px solid #162b1c; border-bottom: 1px solid #162b1c;
+}
+.case-card__num {
+  font-size: clamp(72px,7.5vw,96px); font-weight: 900; color: var(--atlas-green);
+  letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 40px rgba(0,230,118,0.4);
+}
+.case-card__num-label { font-size: 15px; color: #a3c4a8; font-weight: 500; line-height: 1.4; max-width: 14ch; }
+.case-card__quote {
+  font-size: 14px; color: #c8deca; line-height: 1.65; margin: 0;
+  padding-left: 14px; border-left: 2px solid var(--atlas-green);
+  font-style: italic;
+}
+
+/* ---------- ABOUT (mantido no CSS, mas seção removida das páginas) ---------- */
+.about { padding: var(--section-y) 0; background: #000; position: relative; overflow: hidden; }
+.about__inner { display: grid; grid-template-columns: 1.4fr 0.6fr; align-items: center; gap: 40px; }
+@media (max-width: 900px) { .about__inner { grid-template-columns: 1fr; } }
+.about__copy h2 { margin: 18px 0 22px; max-width: 18ch; color: #fff; }
+.about__copy .lead { margin-bottom: 28px; max-width: 50ch; }
+.about__visual { display: grid; place-items: center; }
+.about__number {
+  font-size: clamp(180px,22vw,320px); font-weight: 900;
+  color: transparent; -webkit-text-stroke: 2px #262626;
+  line-height: 0.85; letter-spacing: -0.05em; user-select: none;
+}
+
+/* ---------- FAQ ---------- */
+.faq { padding: clamp(12px, 1.5vw, 20px) 0 clamp(32px, 4vw, 56px); background: #060d08; border-top: 1px solid #1a2b1e; }
+.faq__list {
+  display: flex; flex-direction: column; gap: 1px;
+  background: #262626; border: 1px solid #262626;
+  border-radius: var(--radius-lg); overflow: hidden; max-width: 880px; margin: 0 auto;
+}
+.faq__item { background: #0b1610; }
+.faq__q {
+  width: 100%; background: transparent; border: 0;
+  padding: 22px 26px; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  font-family: inherit; font-size: 17px; font-weight: 600; color: #fff;
+  cursor: pointer; text-align: left;
+  transition: background var(--dur-2) var(--ease-standard);
+}
+.faq__q:hover { background: #1a1a1a; }
+.faq__icon {
+  width: 32px; height: 32px; flex-shrink: 0; border-radius: 999px;
+  background: #262626; display: grid; place-items: center; color: var(--atlas-green);
+  transition: background var(--dur-2) var(--ease-standard), color var(--dur-2) var(--ease-standard);
+}
+.faq__item.is-open .faq__icon { background: var(--atlas-green); color: #000; }
+.faq__a { padding: 0 26px 24px; font-size: 15px; color: #d4d4d4; line-height: 1.65; max-width: 68ch; display: none; }
+.faq__item.is-open .faq__a { display: block; }
+
+/* ---------- CTA FINAL ---------- */
+.cta-final { background: linear-gradient(180deg, #000 0%, #071a0e 20%, #0d3320 50%, #15803D 80%); padding: clamp(56px, 8vw, 112px) 0 clamp(48px, 6vw, 88px); }
+.cta-final__inner { text-align: center; max-width: 720px; margin: 0 auto; }
+.cta-final__title {
+  font-size: clamp(32px,4.4vw,56px); font-weight: 800;
+  letter-spacing: -0.02em; color: #fff; margin: 0 0 16px;
+  line-height: 1.1; text-wrap: balance;
+}
+.cta-final__sub { font-size: 18px; color: rgba(255,255,255,0.85); margin: 0 0 32px; }
+
+/* ---------- FOOTER ---------- */
+.site-footer { background: #fff; border-top: 1px solid #e5e5e5; padding-top: 64px; }
+.site-footer__inner { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 56px; }
+@media (max-width: 760px) { .site-footer__inner { grid-template-columns: 1fr 1fr; } }
+.site-footer__brand { display: flex; gap: 14px; align-items: flex-start; }
+.site-footer__mark { height: 40px; width: auto; max-width: 180px; object-fit: contain; }
+.site-footer__name { color: #000; font-weight: 700; letter-spacing: 0.06em; font-size: 14px; margin-bottom: 6px; }
+.site-footer__tag { color: #737373; font-size: 13px; line-height: 1.45; max-width: 24ch; }
+.site-footer__col-title { color: #000; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; }
+.site-footer__col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.site-footer__col a { color: #404040; font-size: 14px; text-decoration: none; transition: color var(--dur-2) var(--ease-standard); }
+.site-footer__col li { color: #404040; font-size: 14px; }
+.site-footer__col a:hover { color: var(--atlas-green); }
+.site-footer__bar { border-top: 1px solid #e5e5e5; padding: 22px 0; }
+.site-footer__bar-inner {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+  color: #737373; font-size: 12px;
+}
+
+/* =================================================================
+   PÁGINAS INTERNAS — page-hero, layout com sumário, conteúdo
+   ================================================================= */
+.page-hero { background: #000; padding: clamp(56px, 9vw, 112px) 0 clamp(48px, 7vw, 88px); position: relative; overflow: hidden; }
+.page-hero__inner {
+  display: grid; grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(40px, 6vw, 80px); align-items: center;
+}
+@media (max-width: 900px) { .page-hero__inner { grid-template-columns: 1fr; } }
+.page-hero__headline {
+  font-size: clamp(34px, 4.6vw, 60px); font-weight: 800;
+  line-height: 1.05; letter-spacing: -0.025em; color: #fff; margin: 0 0 22px;
+}
+.page-hero__headline span { color: var(--atlas-green); }
+.page-hero__sub { font-size: 18px; line-height: 1.55; color: #d4d4d4; max-width: 50ch; margin: 0 0 32px; }
+
+/* layout sumário + conteúdo */
+.svc-layout {
+  display: grid; grid-template-columns: 240px 1fr; gap: 56px;
+  max-width: var(--container); margin: 0 auto; padding: var(--section-y) var(--container-pad);
+  align-items: start;
+}
+@media (max-width: 900px) { .svc-layout { grid-template-columns: 1fr; gap: 36px; } }
+
+.sumario { position: sticky; top: 96px; }
+@media (max-width: 900px) { .sumario { position: static; } }
+.sumario__label {
+  font-size: var(--fs-eyebrow); font-weight: 600; letter-spacing: var(--tracking-wide);
+  text-transform: uppercase; color: var(--atlas-green); margin-bottom: 16px;
+}
+.sumario__list { display: flex; flex-direction: column; gap: 2px; }
+@media (max-width: 900px) { .sumario__list { flex-direction: row; flex-wrap: wrap; gap: 6px; } }
+.sumario__link {
+  display: block; padding: 8px 14px; font-size: 14px; font-weight: 500; color: #a3a3a3;
+  border-left: 2px solid #262626; border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  transition: color var(--dur-2), border-color var(--dur-2), background var(--dur-2);
+}
+.sumario__link:hover, .sumario__link.is-active {
+  color: #fff; border-left-color: var(--atlas-green); background: #0d1f12;
+}
+@media (max-width: 900px) {
+  .sumario__link { border-left: none; border-bottom: 2px solid #e5e5e5; border-radius: var(--radius-md) var(--radius-md) 0 0; }
+  .sumario__link:hover, .sumario__link.is-active { border-bottom-color: var(--atlas-green); }
+}
+.sumario__cta { margin-top: 26px; }
+@media (max-width: 900px) { .sumario__cta { margin-top: 16px; } }
+
+/* conteúdo do artigo */
+.svc-content h2 {
+  font-size: var(--fs-h3); margin: 48px 0 16px; scroll-margin-top: 96px;
+}
+.svc-content h2:first-child { margin-top: 0; }
+.svc-content h3 {
+  font-size: 20px; font-weight: 600; margin: 28px 0 12px; color: #000; scroll-margin-top: 96px;
+}
+.svc-content p { font-size: var(--fs-body); color: #d4d4d4; line-height: 1.7; margin-bottom: 16px; }
+.svc-content strong { color: #fff; }
+.svc-content ul { list-style: none; margin: 0 0 22px; display: flex; flex-direction: column; gap: 9px; }
+.svc-content ul li { padding-left: 26px; position: relative; font-size: var(--fs-body); color: #d4d4d4; line-height: 1.6; }
+.svc-content ul li::before {
+  content: "→"; position: absolute; left: 0; top: 0; color: var(--atlas-green-dark); font-weight: 700;
+}
+.svc-callout {
+  background: #0d1f12; border: 1px solid #1a3d22; border-left: 3px solid var(--atlas-green);
+  border-radius: var(--radius-md); padding: 20px 24px; margin: 28px 0;
+}
+.svc-callout p { color: #d4d4d4; margin: 0; font-size: 15px; }
+
+/* formulário de contato */
+.contato { padding: var(--section-y) 0; background: #000; }
+.contato__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px,5vw,72px); align-items: start; }
+@media (max-width: 820px) { .contato__grid { grid-template-columns: 1fr; } }
+.contato__info-item { margin-bottom: 22px; }
+.contato__info-label { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--atlas-green-dark); margin-bottom: 4px; }
+.contato__info-value { font-size: 16px; color: #171717; }
+.contato__form { display: flex; flex-direction: column; gap: 16px; }
+.contato__field { display: flex; flex-direction: column; gap: 6px; }
+.contato__field label { font-size: 14px; font-weight: 600; color: #fff; }
+.contato__field input, .contato__field textarea {
+  font-family: inherit; font-size: 15px; padding: 12px 14px; border: 1px solid #d4d4d4;
+  border-radius: var(--radius-md); color: #fff; background: #1a1a1a; border-color: #404040; transition: border-color var(--dur-2);
+}
+.contato__field input:focus, .contato__field textarea:focus { outline: none; border-color: var(--atlas-green); box-shadow: var(--focus-ring); }
+.contato__field textarea { resize: vertical; min-height: 120px; }
+
+
+/* -------- BOTÃO FLUTUANTE WHATSAPP -------- */
+.wpp-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: var(--atlas-green); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 24px rgba(0,230,118,0.55);
+  transition: transform 150ms, box-shadow 150ms;
+  text-decoration: none;
+}
+.wpp-float:hover { transform: scale(1.1); box-shadow: 0 6px 32px rgba(0,230,118,0.7); }
+.wpp-float svg { pointer-events: none; }
+
+
+
+
+/* -------- BANNER 100% ORGÂNICO -------- */
+.organic-banner { background: transparent; padding: 0 clamp(16px, 3vw, 40px) 0; overflow: visible; margin-top: clamp(-52px, -6vw, -72px); position: relative; z-index: 10; }
+.organic-banner__inner { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; background: #fff; border-radius: 16px; padding: 22px 36px; max-width: var(--container); margin: 0 auto; box-shadow: 0 12px 56px rgba(0,0,0,.45), 0 2px 8px rgba(0,0,0,.3); }
+.organic-banner__num {
+  font-size: clamp(48px, 6.5vw, 78px); font-weight: 900; color: #000;
+  letter-spacing: -0.035em; line-height: 1; flex-shrink: 0; white-space: nowrap;
+}
+.organic-banner__body { flex: 1; min-width: 200px; }
+.organic-banner__body strong {
+  display: block; font-size: clamp(14px, 1.3vw, 16px); font-weight: 700;
+  color: #000; margin-bottom: 4px; line-height: 1.3;
+}
+.organic-banner__body span { font-size: 13px; color: #737373; line-height: 1.5; }
+.organic-banner__btn {
+  display: inline-flex; align-items: center; gap: 8px; flex-shrink: 0;
+  background: var(--atlas-green); color: #000; font-family: inherit; font-size: 14px; font-weight: 700;
+  padding: 14px 26px; border-radius: 10px; text-decoration: none; transition: background 150ms;
+}
+.organic-banner__btn:hover { background: #15803D; color: #fff; }
+@media (max-width: 620px) {
+  .organic-banner__num { font-size: 52px; }
+  .organic-banner__btn { width: 100%; justify-content: center; }
+}
+
+</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Atlas Digital",
+    "image": "https://atlasdigital.com.br/images/atlas-digital-logo.png",
+    "description": "Agência de posicionamento no Google e IAs em Curitiba. Especialistas em Google Meu Negócio, criação de sites e SEO local.",
+    "url": "https://atlasdigital.com.br",
+    "telephone": "+55-41-98748-5953",
+    "priceRange": "$$",
+    "address": { "@type": "PostalAddress", "addressLocality": "Curitiba", "addressRegion": "PR", "addressCountry": "BR" },
+    "geo": { "@type": "GeoCoordinates", "latitude": "-25.4284", "longitude": "-49.2733" },
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+    "founder": { "@type": "Person", "name": "João André Paes" },
+    "areaServed": { "@type": "City", "name": "Curitiba" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__brand">
+        <img src="images/logo-icon.png" alt="Atlas Digital" class="site-header__mark">
+        <span class="site-header__wordmark">ATLAS DIGITAL</span>
+      </a>
+      <nav class="site-header__nav" id="main-nav">
+        <a href="index.html" class="site-header__link is-active">Início</a>
+        <span class="site-header__item">
+          <a href="index.html#serviços" class="site-header__link">Serviços
+            <svg class="site-header__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <span class="site-header__dropdown">
+            <a href="servico-google-meu-negocio.html">Google Meu Negócio</a>
+            <a href="servico-criacao-sites.html">Criação de Sites</a>
+            <a href="servico-posicionamento-google-ia.html">Posicionamento Google e IAs</a>
+          </span>
+        </span>
+        <a href="sobre.html" class="site-header__link">Sobre</a><a href="cases.html" class="site-header__link">Cases</a>
+        <a href="blog.html" class="site-header__link">Blog</a>
+        <a href="contato.html" class="site-header__link">Contato</a>
+      </nav>
+      <button class="site-header__menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <a href="contato.html" class="btn btn--primary btn--sm">Diagnóstico grátis</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="início">
+    <!-- large watermark logo — like GFI Hub's background shape -->
+    <!-- Compass needle watermark (inner logo shape, no circle) -->
+    <div class="hero__bg-logo" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+        <!-- Seta principal -->
+        <path d="M300 80 L470 420 L395 420 L300 230 L205 420 L130 420 Z" fill="white"/>
+        <!-- Montanha -->
+        <path d="M225 440 L270 350 Q280 335 290 350 L300 365 L310 350 Q320 335 330 350 L375 440 Z" fill="white" opacity="0.55"/>
+        <!-- Estrela -->
+        <path d="M300 270 C291 288 278 300 260 309 C278 318 291 330 300 348 C309 330 322 318 340 309 C322 300 309 288 300 270 Z" fill="white" opacity="0.7"/>
+      </svg>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <div class="eyebrow">SEO • Sites • Google Meu Negócio</div>
+        <h1 class="hero__headline">Sua empresa no topo do Google e das IAs em Curitiba.</h1>
+        <p class="hero__sub">
+          A Atlas Digital posiciona clínicas, escritórios, construtoras e PMEs de Curitiba onde o cliente está procurando: no Google, no Maps, no ChatGPT, Gemini e Perplexity. Sem promessa vazia. Com resultado mensurável.
+        </p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="https://wa.me/5541987485953?text=Quero%20estar%20entre%20os%201%C2%B0%20no%20Google.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.106 1.523 5.836L.057 23.571a.75.75 0 00.93.894l5.908-1.547A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 01-4.964-1.358l-.356-.213-3.693.968.988-3.608-.232-.372A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>Quero estar entre os 1° no Google</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__phone-wrap">
+          <!-- phone frame -->
+          <div class="hero__phone">
+            <div class="hero__phone-screen">
+              <div class="gsearch">
+                <div class="gsearch__bar">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                  <span class="gsearch__query">padaria perto de mim<span class="gsearch__caret">|</span></span>
+                </div>
+                <div class="gsearch__chips">
+                  <span class="gsearch__chip is-on">Tudo</span>
+                  <span class="gsearch__chip">Mapas</span>
+                  <span class="gsearch__chip">Imagens</span>
+                </div>
+                <div class="gsearch__result is-top">
+                  <div class="gsearch__badge">Resultado #1</div>
+                  <div class="gsearch__url">padariadobeto.com.br › cardapio</div>
+                  <div class="gsearch__title">Padaria do Beto — Água Verde, Curitiba</div>
+                  <div class="gsearch__snippet">Pão saindo do forno a cada hora. Aberto das 6h às 20h. República Argentina, 1024.</div>
+                  <div class="gsearch__stars">
+                    <span>★ ★ ★ ★ ★</span>
+                    <span class="gsearch__rating">4,9 · 312 avaliações</span>
+                  </div>
+                </div>
+                <div class="gsearch__result">
+                  <div class="gsearch__url">outro-site.com</div>
+                  <div class="gsearch__title">Padarias em Curitiba — lista</div>
+                  <div class="gsearch__snippet">Confira as 10 melhores padarias...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- floating notifications -->
+          <div class="hero__notif hero__notif--1" aria-hidden="true">
+            <div class="notif__icon notif__icon--google">
+              <svg width="15" height="15" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="notif__body">
+              <div class="notif__title">Nova busca orgânica</div>
+              <div class="notif__sub">clínica curitiba batel · agora</div>
+            </div>
+            <div class="notif__dot"></div>
+          </div>
+
+          <div class="hero__notif hero__notif--2" aria-hidden="true">
+            <div class="notif__icon notif__icon--ai">✦</div>
+            <div class="notif__body">
+              <div class="notif__title">"Te achei no ChatGPT"</div>
+              <div class="notif__sub">Mensagem de cliente · hoje</div>
+            </div>
+            <div class="notif__dot"></div>
+          </div>
+
+          <div class="hero__notif hero__notif--3" aria-hidden="true">
+            <div class="notif__icon notif__icon--maps">
+              <svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#EA4335"/></svg>
+            </div>
+            <div class="notif__body">
+              <div class="notif__title">+5 ligações este mês</div>
+              <div class="notif__sub">Google Maps · Curitiba</div>
+            </div>
+            <div class="notif__dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER 100% ORGÂNICO -->
+  <div class="organic-banner">
+    <div class="organic-banner__inner">
+      <div class="organic-banner__num">100%</div>
+      <div class="organic-banner__body">
+        <strong>Resultado 100% orgânico — sem gastar com tráfego pago</strong>
+        <span>Não precisa de anúncios. O posicionamento cresce mês a mês e continua mesmo quando você para de investir.</span>
+      </div>
+      <a class="organic-banner__btn" href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20quero%20resultado%20org%C3%A2nico%20no%20Google%20sem%20pagar%20tr%C3%A1fego." target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.106 1.523 5.836L.057 23.571a.75.75 0 00.93.894l5.908-1.547A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 01-4.964-1.358l-.356-.213-3.693.968.988-3.608-.232-.372A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="serviços">
+    <div class="container">
+      <header class="section-head section-head--center">
+        <h2 style="max-width:none">Serviços de SEO em Curitiba.<br><span style="color:var(--atlas-green);font-weight:600">Pacote completo ou avulso.</span></h2>
+        <p class="lead">O ideal é os três trabalhando juntos — SEO, site e Google Meu Negócio se reforçam. Mas se você só precisa de um, a gente faz só esse também. Sem empurrar o que você não quer.</p>
+      </header>
+      <div class="services__grid">
+
+        <article class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+          <span class="svc-card__cat">SEO &amp; IAs</span>
+          <h3 class="svc-card__title">Posicionamento no Google e nas IAs</h3>
+          <p class="svc-card__desc">Quem pesquisa em Curitiba o que você faz encontra você — no Google e no ChatGPT. Não o concorrente.</p>
+          <div class="svc-card__divider" aria-hidden="true"></div>
+          <ul class="svc-card__bullets">
+            <li>SEO técnico, on-page e de conteúdo</li>
+            <li>GEO: visibilidade no ChatGPT, Gemini e Perplexity</li>
+            <li>Relatório mensal do que está rankeando</li>
+          </ul>
+          <a href="servico-posicionamento-google-ia.html" class="svc-card__cta">Ver serviço <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <span class="svc-card__cat">Criação de site</span>
+          <h3 class="svc-card__title">Site que converte visita em contato</h3>
+          <p class="svc-card__desc">Site não é cartão de visita. É vendedor 24h. Se o seu não traz contato, a gente reconstrói do jeito certo.</p>
+          <div class="svc-card__divider" aria-hidden="true"></div>
+          <ul class="svc-card__bullets">
+            <li>Estrutura focada em conversão</li>
+            <li>Velocidade e SEO técnico de verdade</li>
+            <li>Responsivo e otimizado para mobile</li>
+          </ul>
+          <a href="servico-criacao-sites.html" class="svc-card__cta">Ver serviço <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+          <span class="svc-card__cat">Google Meu Negócio</span>
+          <h3 class="svc-card__title">Ficha do Google que faz o telefone tocar</h3>
+          <p class="svc-card__desc">Aquela ficha que quase ninguém arruma. Mas é ela que coloca o cliente na sua porta.</p>
+          <div class="svc-card__divider" aria-hidden="true"></div>
+          <ul class="svc-card__bullets">
+            <li>Ficha completa, otimizada e atualizada</li>
+            <li>Estratégia de avaliações que gera reputação</li>
+            <li>Posts e fotos que aparecem no Google Maps</li>
+          </ul>
+          <a href="servico-google-meu-negocio.html" class="svc-card__cta">Ver serviço <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+      </div>
+      <article class="bundle-card">
+        <div>
+          <span class="bundle-card__badge">Mais escolhido</span>
+          <h3 class="bundle-card__title">Pacote completo</h3>
+          <p class="bundle-card__desc">Os três serviços trabalhando junto. É assim que negócio local sai do zero no Google de verdade.</p>
+        </div>
+        <a class="btn btn--primary" href="contato.html">Quero o pacote completo</a>
+      </article>
+      <div class="services__alt">
+        <a href="contato.html" class="link-ghost">Prefere um serviço só? Fala com a gente →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how" id="como-funciona">
+    <div class="container how__inner">
+
+      <!-- Left: label + heading + timeline + CTA -->
+      <div class="how__left">
+        <div class="how__label">Como funciona</div>
+        <h2 class="how__heading">Sem mistério. Sem promessa de primeiro lugar em 7 dias.</h2>
+        <p class="how__lead">Quatro passos. Você sabe o que vai acontecer e quando.</p>
+        <ol class="how__timeline">
+          <li class="how__step">
+            <div class="how__circle">1</div>
+            <div class="how__step-body">
+              <div class="how__step-title">Diagnóstico</div>
+              <p class="how__step-desc">A gente olha seu negócio, seus concorrentes e o que dá pra fazer.</p>
+            </div>
+          </li>
+          <li class="how__step">
+            <div class="how__circle">2</div>
+            <div class="how__step-body">
+              <div class="how__step-title">Plano</div>
+              <p class="how__step-desc">Você sabe exatamente o que vai ser feito e por quê.</p>
+            </div>
+          </li>
+          <li class="how__step">
+            <div class="how__circle">3</div>
+            <div class="how__step-body">
+              <div class="how__step-title">Execução</div>
+              <p class="how__step-desc">Site, SEO e Google Meu Negócio funcionando junto.</p>
+            </div>
+          </li>
+          <li class="how__step">
+            <div class="how__circle">4</div>
+            <div class="how__step-body">
+              <div class="how__step-title">Acompanhamento</div>
+              <p class="how__step-desc">Você vê o que tá crescendo todo mês.</p>
+            </div>
+          </li>
+        </ol>
+        <a class="btn btn--primary" href="contato.html">Quero começar agora</a>
+      </div>
+
+      <!-- Right: stacked screenshots -->
+      <div class="how__screens">
+        <div class="how__screen how__screen--back">
+          <img src="images/screenshot-dashboard.png" alt="Dashboard de SEO mostrando crescimento de tráfego orgânico" width="900" height="600" loading="lazy">
+        </div>
+        <div class="how__screen how__screen--front">
+          <img src="images/screenshot-local-seo.png" alt="Resultado de busca Google local mostrando empresa em primeiro lugar" width="900" height="600" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section class="cases" id="cases">
+    <div class="container">
+      <header class="section-head">
+        <h2>Resultado de cliente real</h2>
+        <p class="lead">Clientes reais. Resultado verificável.</p>
+      </header>
+      <div class="cases__grid">
+        <article class="case-card">
+          <div class="case-card__meta"><span class="case-card__name">Mery Barone</span><span class="case-card__seg">Saúde · Curitiba</span></div>
+          <p class="case-card__problem">Sem perfil no Google. Clientes não conseguiam achar, nem pesquisando pelo nome.</p>
+          <div class="case-card__result"><div class="case-card__num">1°</div><div class="case-card__num-label">no Google em 3 meses</div></div>
+          <blockquote class="case-card__quote">"Do zero ao primeiro lugar. Agora me encontram antes de qualquer concorrente."</blockquote>
+        </article>
+        <article class="case-card">
+          <div class="case-card__meta"><span class="case-card__name">CT Via Venuto</span><span class="case-card__seg">Jiu-Jitsu · Curitiba</span></div>
+          <p class="case-card__problem">Sem presença no Google, competindo contra Gracie Barra e Gile Ribeiro.</p>
+          <div class="case-card__result"><div class="case-card__num">1°</div><div class="case-card__num-label">acima da Gracie Barra em 3 meses</div></div>
+          <blockquote class="case-card__quote">"Em 3 meses ultrapassamos a Gracie Barra e o Gile Ribeiro no Google."</blockquote>
+        </article>
+      </div>
+      <div class="services__alt"><a href="sobre.html" class="site-header__link">Sobre</a><a href="cases.html" class="link-ghost">Ver todos os cases →</a></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <header class="section-head">
+        <h2>Pergunta que todo mundo faz</h2>
+        <p class="lead">Resposta honesta, antes de você ligar.</p>
+      </header>
+      <div class="faq__list">
+        <div class="faq__item is-open">
+          <button class="faq__q" aria-expanded="true">
+            <span>Em quanto tempo eu apareço no Google?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg class="icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              <svg class="icon-plus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:none"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq__a">Depende da concorrência do seu bairro e do estado atual do seu site. Em geral, 60 a 120 dias pra ver movimento real. Quem promete 7 dias tá te enrolando.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Por que SEO e não Google Ads?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg class="icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:none"><path d="M5 12h14"/></svg>
+              <svg class="icon-plus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq__a">Os dois funcionam — mas Ads você liga, paga e desliga. SEO continua trabalhando depois. Pra negócio local de Curitiba, o orgânico costuma sair muito mais barato no médio prazo.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>O que é otimização para IAs (GEO)?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg class="icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:none"><path d="M5 12h14"/></svg>
+              <svg class="icon-plus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq__a">GEO (Generative Engine Optimization) é o conjunto de estratégias pra fazer sua marca aparecer nas respostas de ChatGPT, Gemini e Perplexity. É o novo SEO — e a Atlas é uma das pioneiras nessa frente em Curitiba.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Vocês atendem fora de Curitiba?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg class="icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:none"><path d="M5 12h14"/></svg>
+              <svg class="icon-plus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq__a">Sim, atendemos Curitiba e região metropolitana — São José dos Pinhais, Pinhais, Colombo, Araucária. Fora disso a gente avalia caso a caso.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Tem contrato amarrado?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg class="icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:none"><path d="M5 12h14"/></svg>
+              <svg class="icon-plus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq__a">Não. Acordo mensal, você cancela quando quiser. Se a gente não tá entregando, não faz sentido te prender.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Quanto custa?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg class="icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:none"><path d="M5 12h14"/></svg>
+              <svg class="icon-plus" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq__a">Depende do tamanho do seu negócio e do estado atual. A gente monta o orçamento depois do diagnóstico — que é gratuito. Sem pegadinha.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="cta">
+    <div class="container cta-final__inner">
+      <h2 class="cta-final__title">Bora descobrir o que dá pra fazer pelo seu negócio?</h2>
+      <p class="cta-final__sub">Diagnóstico gratuito, sem compromisso.</p>
+      <a href="contato.html" class="btn btn--on-green">Quero meu diagnóstico</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contato">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="images/logo-horizontal.png" alt="Atlas Digital" class="site-footer__mark">
+        <div>
+          <div class="site-footer__name">ATLAS DIGITAL</div>
+          <div class="site-footer__tag">Posicionamento orgânico para negócios locais.</div>
+        </div>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__col-title">Navegar</div>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#serviços">Serviços</a></li>
+          <li><a href="sobre.html" class="site-header__link">Sobre</a><a href="cases.html">Cases</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__col-title">Serviços</div>
+        <ul>
+          <li><a href="servico-google-meu-negocio.html">Google Meu Negócio</a></li>
+          <li><a href="servico-criacao-sites.html">Criação de Sites</a></li>
+          <li><a href="servico-posicionamento-google-ia.html">Google e IAs</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__col-title">Contato</div>
+        <ul>
+          <li><a href="https://wa.me/5541987485953">WhatsApp · (41) 98748-5953</a></li>
+          <li><a href="mailto:joao.iautomacao@gmail.com">joao.iautomacao@gmail.com</a></li>
+          <li>Curitiba · PR</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bar">
+      <div class="container site-footer__bar-inner">
+        <span>© 2026 Atlas Digital. Posicionamento orgânico para negócios locais.</span>
+        <span>Curitiba · PR · Brasil</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+// FAQ accordion
+document.querySelectorAll('.faq__q').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var item = btn.closest('.faq__item');
+    var isOpen = item.classList.contains('is-open');
+    document.querySelectorAll('.faq__item').forEach(function (el) {
+      el.classList.remove('is-open');
+      el.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+      var minus = el.querySelector('.icon-minus');
+      var plus = el.querySelector('.icon-plus');
+      if (minus) minus.style.display = 'none';
+      if (plus) plus.style.display = '';
+    });
+    if (!isOpen) {
+      item.classList.add('is-open');
+      btn.setAttribute('aria-expanded', 'true');
+      var minus = item.querySelector('.icon-minus');
+      var plus = item.querySelector('.icon-plus');
+      if (minus) minus.style.display = '';
+      if (plus) plus.style.display = 'none';
+    }
+  });
+});
+
+// menu mobile
+var menuBtn = document.getElementById('menu-btn');
+var mainNav = document.getElementById('main-nav');
+if (menuBtn && mainNav) {
+  menuBtn.addEventListener('click', function () {
+    var open = mainNav.classList.toggle('is-open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });

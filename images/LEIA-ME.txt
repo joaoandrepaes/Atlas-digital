@@ -1,0 +1,41 @@
+IMAGENS NECESSÁRIAS PARA O SITE ATLAS DIGITAL
+
+CRÍTICAS (substituir placeholders no site):
+
+1. atlas-digital-curitiba-hero.webp
+   - Hero da home
+   - Dimensão: 1920x1080px
+   - Sugestão: foto/ilustração de Curitiba estilizada com tom verde escuro
+
+2. joao-andre-paes-fundador-atlas-digital.webp
+   - Foto profissional do João
+   - Dimensão: 800x1000px (vertical)
+   - Aparece na seção Sobre e no rodapé da Home
+
+3. atlas-digital-og-image.jpg
+   - Imagem de compartilhamento (Facebook/LinkedIn/WhatsApp)
+   - Dimensão: 1200x630px
+
+CASES (6 cards):
+4. case-saude-curitiba-resultados.webp
+5. case-servicos-curitiba-google-maps.webp
+6. case-construcao-curitiba-leads.webp
+7. case-juridico-curitiba.webp
+8. case-estetica-curitiba.webp
+9. case-educacao-curitiba.webp
+
+SERVIÇOS (heros das páginas):
+10. google-meu-negocio-curitiba.webp
+11. criacao-sites-wordpress-curitiba.webp
+12. posicionamento-google-ia-curitiba.webp
+
+OPCIONAIS:
+- curitiba-jardim-botanico.webp (foto local pra SEO)
+- escritorio-atlas-digital.webp
+- screenshots-resultados-gmn.webp (provas reais de resultado)
+
+REGRAS DE NOMENCLATURA:
+- Sempre lowercase, separado por hífens
+- Sempre incluir palavra-chave (curitiba, atlas-digital, ou nome do serviço)
+- Formato preferido: WebP (50% menor que JPG)
+- Sempre adicionar alt text descritivo no HTML
