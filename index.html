@@ -505,19 +505,19 @@ h3 {
 /* Right — screenshots lado a lado */
 .how__screens {
   position: relative;
-  height: 380px;
+  height: 400px;
   align-self: center;
   width: 100%;
 }
 .how__screens::before {
   content: '';
   position: absolute;
-  bottom: -20px; left: -20px;
-  width: 60%; height: 60%;
-  background: rgba(0,193,112,0.07);
-  border-radius: 18px;
+  bottom: -16px; left: -16px;
+  width: 58%; height: 58%;
+  background: rgba(0,193,112,0.06);
+  border-radius: 16px;
   z-index: 0;
-  transform: rotate(-3deg);
+  transform: rotate(-4deg);
 }
 .how__screen {
   position: absolute;
@@ -529,16 +529,16 @@ h3 {
 }
 .how__screen--back {
   top: 0; right: 0;
-  width: 80%;
+  width: 86%;
   z-index: 1;
-  box-shadow: 0 8px 32px rgba(0,0,0,.6), 0 2px 8px rgba(0,0,0,.35);
+  box-shadow: 0 8px 40px rgba(0,0,0,.65), 0 2px 10px rgba(0,0,0,.4);
 }
 .how__screen--front {
   bottom: 0; left: 0;
-  width: 62%;
+  width: 66%;
   z-index: 2;
-  box-shadow: 0 10px 40px rgba(0,0,0,.72), 0 2px 8px rgba(0,0,0,.5);
-  border: 2px solid rgba(255,255,255,.07);
+  box-shadow: 0 12px 48px rgba(0,0,0,.78), 0 2px 10px rgba(0,0,0,.55);
+  border: 2px solid rgba(255,255,255,.09);
 }
 .how__screen:hover { transform: translateY(-4px); }
 .how__screen img { width: 100%; display: block; }
