@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#050d10"/>
+      <stop offset="100%" stop-color="#0d1c14"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="270" fill="url(#bg3)"/>
+  <!-- Faint map grid -->
+  <line x1="0" y1="67" x2="480" y2="67" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="0" y1="134" x2="480" y2="134" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="0" y1="201" x2="480" y2="201" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="96" y1="0" x2="96" y2="270" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="192" y1="0" x2="192" y2="270" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="288" y1="0" x2="288" y2="270" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="384" y1="0" x2="384" y2="270" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <!-- Road shapes (faint) -->
+  <rect x="0" y="126" width="480" height="8" fill="rgba(255,255,255,0.025)"/>
+  <rect x="220" y="0" width="8" height="270" fill="rgba(255,255,255,0.025)"/>
+  <!-- Location pin -->
+  <path d="M242 20 C222 20 208 34 208 52 C208 76 242 112 242 112 C242 112 276 76 276 52 C276 34 262 20 242 20 Z" fill="#EA4335"/>
+  <circle cx="242" cy="52" r="11" fill="rgba(255,255,255,0.88)"/>
+  <!-- GMB Panel -->
+  <rect x="44" y="120" width="392" height="132" rx="14" fill="rgba(18,22,30,0.97)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <!-- Left: logo area -->
+  <rect x="60" y="136" width="52" height="52" rx="8" fill="rgba(66,133,244,0.12)" stroke="rgba(66,133,244,0.2)" stroke-width="1"/>
+  <text x="86" y="167" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#4285F4" text-anchor="middle">G</text>
+  <!-- Business info -->
+  <text x="126" y="151" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#fff">Sua Empresa</text>
+  <text x="126" y="167" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">Curitiba, PR · seu-segmento</text>
+  <!-- Stars -->
+  <text x="126" y="184" font-family="Arial,sans-serif" font-size="15" fill="#FBBC04">★★★★★</text>
+  <text x="228" y="184" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.38)">4,9 · (183 avaliações)</text>
+  <!-- Open status -->
+  <circle cx="128" cy="199" r="4" fill="#34A853"/>
+  <text x="138" y="203" font-family="Arial,sans-serif" font-size="11" fill="#34A853">Aberto agora</text>
+  <text x="218" y="203" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.3)"> · Fecha às 18h</text>
+  <!-- Action buttons -->
+  <rect x="126" y="212" width="64" height="26" rx="13" fill="rgba(66,133,244,0.14)" stroke="rgba(66,133,244,0.28)" stroke-width="1"/>
+  <text x="158" y="229" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#4285F4" text-anchor="middle">📍 Rota</text>
+  <rect x="198" y="212" width="64" height="26" rx="13" fill="rgba(52,168,83,0.14)" stroke="rgba(52,168,83,0.28)" stroke-width="1"/>
+  <text x="230" y="229" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#34A853" text-anchor="middle">📞 Ligar</text>
+  <rect x="270" y="212" width="80" height="26" rx="13" fill="rgba(234,67,53,0.12)" stroke="rgba(234,67,53,0.25)" stroke-width="1"/>
+  <text x="310" y="229" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#EA4335" text-anchor="middle">Agendar</text>
+  <!-- Views stat -->
+  <text x="386" y="155" font-family="Arial,sans-serif" font-size="11" fill="rgba(0,193,112,0.7)" text-anchor="middle">👁 2.340</text>
+  <text x="386" y="169" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)" text-anchor="middle">views/mês</text>
+  <!-- Badge -->
+  <rect x="348" y="126" width="80" height="22" rx="11" fill="rgba(0,193,112,0.13)"/>
+  <text x="388" y="141" font-family="Arial,sans-serif" font-size="9.5" font-weight="700" fill="#00C170" text-anchor="middle">Google Maps</text>
+</svg>
