@@ -522,47 +522,69 @@ h3 {
 /* Right — stacked screenshots */
 .how__screens {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   align-self: center;
-  height: 340px;
 }
 .how__screen {
-  position: absolute;
-  width: clamp(260px, 52%, 340px);
   line-height: 0;
   border-radius: 14px;
   overflow: hidden;
+  cursor: zoom-in;
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
-.how__screen img {
-  width: 100%;
-  display: block;
-}
+.how__screen:hover { transform: translateY(-3px); }
+.how__screen img { width: 100%; display: block; }
+
+/* Front image: Google SERP — full width, primary */
 .how__screen--front {
+  position: relative;
   z-index: 2;
-  top: 0;
-  left: 0;
+  width: 100%;
   box-shadow:
     0 0 0 1px rgba(255,255,255,.09),
-    0 4px 12px rgba(0,0,0,.3),
-    0 20px 48px rgba(0,0,0,.55),
-    0 40px 80px rgba(0,0,0,.4);
+    0 8px 24px rgba(0,0,0,.4),
+    0 28px 56px rgba(0,0,0,.55);
 }
+/* Back image: Dashboard — offset behind, bottom-right peek */
 .how__screen--back {
+  position: absolute;
   z-index: 1;
-  bottom: 0;
-  right: 0;
-  filter: brightness(0.6) saturate(0.65);
+  top: -32px;
+  right: -28px;
+  width: 72%;
+  filter: brightness(0.75) saturate(0.8);
   box-shadow:
     0 0 0 1px rgba(255,255,255,.05),
-    0 8px 28px rgba(0,0,0,.4),
-    0 32px 60px rgba(0,0,0,.5);
+    0 12px 32px rgba(0,0,0,.5);
 }
+.how__screen--front { margin-top: 44px; } /* push down so back peeks above */
+
 @media (max-width: 860px) {
-  .how__screens { height: 280px; }
-  .how__screen { width: clamp(220px, 58%, 300px); }
+  .how__screen--back { display: none; }
+  .how__screen--front { margin-top: 0; }
 }
+
+/* ── LIGHTBOX ── */
+.lightbox-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,.92);
+  align-items: center; justify-content: center;
+  cursor: zoom-out;
+  padding: 24px;
+}
+.lightbox-overlay.is-open { display: flex; }
+.lightbox-overlay img {
+  max-width: 94vw; max-height: 90vh;
+  border-radius: 14px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.8);
+  pointer-events: none;
+}
+.lightbox-close {
+  position: absolute; top: 20px; right: 24px;
+  background: none; border: none; color: #fff; font-size: 32px;
+  cursor: pointer; line-height: 1; opacity: 0.7;
+}
+.lightbox-close:hover { opacity: 1; }
 
 /* ---------- CASES ---------- */
 .cases { padding: var(--section-y) 0 clamp(12px, 1.5vw, 20px); background: #030805; border-top: 1px solid #142018; }
@@ -1070,10 +1092,10 @@ h3 {
 
       <!-- Right: stacked screenshots -->
       <div class="how__screens">
-        <div class="how__screen how__screen--back">
+        <div class="how__screen how__screen--back" title="Clique para ampliar">
           <img src="images/screenshot-dashboard.svg" alt="Dashboard de SEO mostrando crescimento de tráfego orgânico" width="900" height="600" loading="lazy">
         </div>
-        <div class="how__screen how__screen--front">
+        <div class="how__screen how__screen--front" title="Clique para ampliar">
           <img src="images/screenshot-local-seo.svg" alt="Resultado de busca Google local mostrando empresa em primeiro lugar" width="900" height="600" loading="lazy">
         </div>
       </div>
@@ -1232,6 +1254,12 @@ h3 {
     </div>
   </footer>
 
+  <!-- LIGHTBOX -->
+  <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&#x2715;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
   <script>
 // FAQ accordion
 document.querySelectorAll('.faq__q').forEach(function (btn) {
@@ -1265,7 +1293,6 @@ document.querySelectorAll('.faq__q').forEach(function (btn) {
   var svcLink = svcItem.querySelector('.site-header__link');
   if (!svcDropdown || !svcLink) return;
 
-  // Touch: primeiro toque abre o dropdown, segundo navega
   svcLink.addEventListener('click', function (e) {
     if (window.matchMedia('(hover: none)').matches) {
       if (!svcDropdown.classList.contains('is-visible')) {
@@ -1275,7 +1302,6 @@ document.querySelectorAll('.faq__q').forEach(function (btn) {
     }
   });
 
-  // Fechar ao clicar fora
   document.addEventListener('click', function (e) {
     if (!svcItem.contains(e.target)) {
       svcDropdown.classList.remove('is-visible');
@@ -1297,3 +1323,40 @@ if (menuBtn && mainNav) {
     e.preventDefault();
     toggleMenu(e);
   });
+}
+
+// Lightbox para imagens do Como Funciona
+(function () {
+  var overlay = document.getElementById('lightbox-overlay');
+  var lightImg = document.getElementById('lightbox-img');
+  if (!overlay || !lightImg) return;
+
+  document.querySelectorAll('.how__screen').forEach(function (screen) {
+    screen.addEventListener('click', function () {
+      var img = screen.querySelector('img');
+      if (!img) return;
+      lightImg.src = img.src;
+      lightImg.alt = img.alt;
+      overlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+    lightImg.src = '';
+  }
+
+  overlay.addEventListener('click', closeLightbox);
+  document.getElementById('lightbox-close').addEventListener('click', function(e) {
+    e.stopPropagation();
+    closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+})();
+  </script>
+</body>
+</html>
