@@ -529,16 +529,18 @@ h3 {
 }
 .how__screen--back {
   top: 0; right: 0;
-  width: 86%;
+  width: 82%;
   z-index: 1;
-  box-shadow: 0 8px 40px rgba(0,0,0,.65), 0 2px 10px rgba(0,0,0,.4);
+  box-shadow: 0 8px 32px rgba(0,0,0,.45), 0 2px 8px rgba(0,0,0,.25);
+  border-radius: 12px;
 }
 .how__screen--front {
   bottom: 0; left: 0;
-  width: 66%;
+  width: 60%;
   z-index: 2;
-  box-shadow: 0 12px 48px rgba(0,0,0,.78), 0 2px 10px rgba(0,0,0,.55);
-  border: 2px solid rgba(255,255,255,.09);
+  box-shadow: 0 12px 40px rgba(0,0,0,.7), 0 2px 8px rgba(0,0,0,.5);
+  border: 2px solid rgba(255,255,255,.1);
+  border-radius: 12px;
 }
 .how__screen:hover { transform: translateY(-4px); }
 .how__screen img { width: 100%; display: block; }
@@ -1076,11 +1078,11 @@ h3 {
 
       <!-- Right: stacked screenshots -->
       <div class="how__screens">
-        <div class="how__screen how__screen--back" title="Clique para ampliar">
-          <img src="images/screenshot-dashboard.svg" alt="Dashboard de SEO mostrando crescimento de tráfego orgânico" width="900" height="600" loading="lazy">
-        </div>
-        <div class="how__screen how__screen--front" title="Clique para ampliar">
+        <div class="how__screen how__screen--back">
           <img src="images/screenshot-local-seo.svg" alt="Resultado de busca Google local mostrando empresa em primeiro lugar" width="900" height="600" loading="lazy">
+        </div>
+        <div class="how__screen how__screen--front">
+          <img src="images/screenshot-dashboard.svg" alt="Dashboard de SEO mostrando crescimento de tráfego orgânico" width="900" height="600" loading="lazy">
         </div>
       </div>
 
