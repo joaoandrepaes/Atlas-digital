@@ -558,6 +558,48 @@ h3 {
   }
 }
 
+/* ── MOCKUPS COMO FUNCIONA ── */
+.how__mock { display:flex; flex-direction:column; overflow:hidden; font-family:Arial,sans-serif; }
+
+/* SERP */
+.how__mock--serp { background:#fff; }
+.m-chrome { background:#f1f3f4; padding:7px 12px; display:flex; align-items:center; gap:5px; border-bottom:1px solid #e0e0e0; }
+.m-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+.m-urlbar { background:#fff; border-radius:10px; padding:3px 10px; font-size:9.5px; color:#5f6368; flex:1; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.m-gbar { padding:7px 12px 6px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #e0e0e0; background:#fff; }
+.m-logo b { font-size:16px; }
+.m-searchbox { background:#f1f3f4; border-radius:20px; padding:5px 13px; font-size:11px; color:#222; flex:1; }
+.m-tabs { padding:4px 12px 5px; font-size:9.5px; color:#5f6368; border-bottom:1px solid #e0e0e0; }
+.m-count { padding:3px 12px; font-size:9px; color:#70757a; }
+.m-r1 { margin:6px 10px 4px; padding:8px 10px; background:rgba(0,193,112,.07); border:1.5px solid rgba(0,193,112,.3); border-radius:9px; display:flex; gap:8px; align-items:flex-start; }
+.m-badge { background:#00C170; color:#fff; font-size:8.5px; font-weight:700; padding:2px 7px; border-radius:10px; flex-shrink:0; margin-top:3px; }
+.m-r1-url { font-size:9px; color:#00C170; margin-bottom:2px; }
+.m-r1-title { font-size:12px; font-weight:700; color:#1558d6; line-height:1.3; margin-bottom:2px; }
+.m-r1-desc { font-size:10px; color:#4d5156; line-height:1.45; }
+.m-r2 { margin:4px 10px; padding:6px 10px; }
+.m-r2-url { font-size:9px; color:#70757a; margin-bottom:2px; }
+.m-r2-title { font-size:11px; font-weight:600; color:#1558d6; margin-bottom:2px; }
+.m-r2-desc { font-size:9.5px; color:#4d5156; }
+
+/* DASHBOARD */
+.how__mock--dash { background:#0d1117; color:#fff; }
+.m-dh { display:flex; align-items:center; gap:8px; padding:8px 10px; border-bottom:1px solid #1e2530; }
+.m-dh-title { font-size:10.5px; font-weight:700; color:#e8f0eb; flex:1; }
+.m-dh-date { font-size:8.5px; color:#4a6650; }
+.m-dh-tag { font-size:8.5px; font-weight:700; color:#00C170; background:rgba(0,193,112,.12); padding:2px 7px; border-radius:8px; }
+.m-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:5px; padding:8px 8px 4px; }
+.m-kpi { background:#111920; border-radius:6px; padding:7px 7px 6px; }
+.m-kpi-l { font-size:7.5px; color:#4a6650; margin-bottom:4px; line-height:1.3; }
+.m-kpi-v { font-size:14px; font-weight:700; color:#e8f0eb; line-height:1; }
+.m-kpi-u { font-size:7.5px; font-weight:600; color:#00C170; }
+.m-kpi-d { font-size:7.5px; font-weight:600; color:#ef4444; }
+.m-chart { display:block; width:calc(100% - 16px); margin:2px 8px 0; }
+.m-table { margin:4px 8px 6px; }
+.m-tr { display:flex; justify-content:space-between; padding:4px 4px; font-size:9.5px; border-bottom:1px solid #1a2230; color:#b0c4b8; }
+.m-tr-h { font-size:8px; color:#4a6650; font-weight:700; }
+.m-tr-dim { opacity:.45; }
+.m-s-hi { color:#00C170; font-weight:700; }
+
 /* ── LIGHTBOX ── */
 .lightbox-overlay {
   display: none;
@@ -1076,14 +1118,69 @@ h3 {
         <a class="btn btn--primary" href="contato.html">Quero começar agora</a>
       </div>
 
-      <!-- Right: stacked screenshots -->
+      <!-- Right: stacked mockups -->
       <div class="how__screens">
-        <div class="how__screen how__screen--back">
-          <img src="images/screenshot-local-seo.svg" alt="Resultado de busca Google local mostrando empresa em primeiro lugar" width="900" height="600" loading="lazy">
+
+        <!-- SERP mockup (back, large) -->
+        <div class="how__screen how__screen--back how__mock how__mock--serp">
+          <div class="m-chrome">
+            <span class="m-dot" style="background:#ff5f57"></span>
+            <span class="m-dot" style="background:#febc2e"></span>
+            <span class="m-dot" style="background:#28c840"></span>
+            <div class="m-urlbar">google.com.br/search?q=clínica+dermatológica+curitiba</div>
+          </div>
+          <div class="m-gbar">
+            <span class="m-logo"><b style="color:#4285F4">G</b><b style="color:#EA4335">o</b><b style="color:#FBBC04">o</b><b style="color:#4285F4">g</b><b style="color:#34A853">l</b><b style="color:#EA4335">e</b></span>
+            <div class="m-searchbox">clínica dermatológica curitiba &nbsp;🔍</div>
+          </div>
+          <div class="m-tabs">Tudo &nbsp;·&nbsp; Maps &nbsp;·&nbsp; Imagens &nbsp;·&nbsp; Vídeos &nbsp;·&nbsp; Mais</div>
+          <div class="m-count">Cerca de 142.000 resultados (0,45 segundos)</div>
+          <div class="m-r1">
+            <span class="m-badge">1º</span>
+            <div>
+              <div class="m-r1-url">clinicadermavida.com.br › dermatologia-curitiba</div>
+              <div class="m-r1-title">Clínica Derma Vida – Dermatologista em Curitiba</div>
+              <div class="m-r1-desc">Consultas rápidas, tratamentos avançados e clínica geral. Agende agora pelo WhatsApp. ⭐ 4,9 · (138 avaliações)</div>
+            </div>
+          </div>
+          <div class="m-r2">
+            <div class="m-r2-url">www.dermacuritiba.com.br › clinica-dermatologica</div>
+            <div class="m-r2-title">Derma Curitiba – Especialistas em Pele</div>
+            <div class="m-r2-desc">Clínica com mais de 10 anos no mercado. Veja nossos serviços e agende uma avaliação.</div>
+          </div>
+          <div class="m-r2">
+            <div class="m-r2-url">www.skincuritiba.com.br</div>
+            <div class="m-r2-title">SkinCare CWB – Dermatologia Estética</div>
+            <div class="m-r2-desc">Tratamentos de pele no Bairro Batel e Água Verde. Consulte disponibilidade.</div>
+          </div>
         </div>
-        <div class="how__screen how__screen--front">
-          <img src="images/screenshot-dashboard.svg" alt="Dashboard de SEO mostrando crescimento de tráfego orgânico" width="900" height="600" loading="lazy">
+
+        <!-- Dashboard mockup (front, small) -->
+        <div class="how__screen how__screen--front how__mock how__mock--dash">
+          <div class="m-dh">
+            <span class="m-dh-title">Painel de SEO</span>
+            <span class="m-dh-date">Out 20 — Fev 25</span>
+            <span class="m-dh-tag">TODOS SITES</span>
+          </div>
+          <div class="m-kpis">
+            <div class="m-kpi"><div class="m-kpi-l">Posição Média</div><div class="m-kpi-v">34 <span class="m-kpi-u">▲51</span></div></div>
+            <div class="m-kpi"><div class="m-kpi-l">Prev. Tráfego</div><div class="m-kpi-v">520 <span class="m-kpi-d">▼245</span></div></div>
+            <div class="m-kpi"><div class="m-kpi-l">Visibilidade</div><div class="m-kpi-v">0,66 <span class="m-kpi-u">▲0,34</span></div></div>
+            <div class="m-kpi"><div class="m-kpi-l">Rec. SERP</div><div class="m-kpi-v">2 <span class="m-kpi-u">▲1</span></div></div>
+          </div>
+          <svg class="m-chart" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polyline points="0,72 55,58 110,46 165,34 220,22 280,14 320,8" fill="none" stroke="#00C170" stroke-width="2.5" stroke-linejoin="round"/>
+            <polyline points="0,76 55,74 110,70 165,64 220,60 280,56 320,54" fill="none" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="4,3" stroke-linejoin="round"/>
+            <polyline points="0,74 55,76 110,72 165,68 220,65 280,62 320,60" fill="none" stroke="#EA4335" stroke-width="1.5" stroke-dasharray="4,3" stroke-linejoin="round"/>
+          </svg>
+          <div class="m-table">
+            <div class="m-tr m-tr-h"><span>Site</span><span>Score</span></div>
+            <div class="m-tr"><span>● Sua Empresa</span><span class="m-s-hi">77</span></div>
+            <div class="m-tr m-tr-dim"><span>● Concorrente 1</span><span>64</span></div>
+            <div class="m-tr m-tr-dim"><span>● Concorrente 2</span><span>58</span></div>
+          </div>
         </div>
+
       </div>
 
     </div>
