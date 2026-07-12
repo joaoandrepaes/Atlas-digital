@@ -2,12 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mensagem recebida — Atlas Digital</title>
+  <meta name="author" content="Assessoria Atlas">
+  <meta name="publisher" content="Assessoria Atlas">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mensagem recebida | Falaremos em breve: Assessoria Atlas</title>
+  <meta name="description" content="Sua mensagem foi recebida. A Assessoria Atlas retorna em até 1 dia útil com o diagnóstico do seu posicionamento.">
   <meta name="robots" content="noindex, nofollow">
+ <link rel="canonical" href="https://assessoriaatlas.com.br/obrigado.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
 :root {
   --atlas-black:      #000000;
@@ -15,6 +19,7 @@
   --atlas-green:      #22C55E;
   --atlas-green-dark: #15803D;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
   --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 *, *::before, *::after { box-sizing: border-box; }
@@ -76,7 +81,7 @@ body {
 .check-circle::before {
   content: "";
   position: absolute; inset: 0; border-radius: 50%;
-  background: rgba(34, 197, 94, 0.1);
+  background: rgba(34,197,94, 0.1);
   animation: pulse-ring 2s ease-out 0.8s infinite;
 }
 .check-icon {
@@ -91,6 +96,7 @@ body {
 
 /* -------- TEXTO -------- */
 .title {
+  font-family: var(--font-serif);
   font-size: clamp(36px, 5vw, 56px);
   font-weight: 800;
   color: #fff;
@@ -188,11 +194,12 @@ body {
   
 /* -------- BOTÃO FLUTUANTE WHATSAPP -------- */
 .wpp-float {
-  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+  position: fixed; bottom: calc(28px + env(safe-area-inset-bottom, 0px)); right: 28px; z-index: 9999;
   width: 60px; height: 60px; border-radius: 50%;
   background: #22C55E; color: #fff;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 24px rgba(34,197,94,0.55);
+  animation: flutuar 4s ease-in-out infinite;
   transition: transform 150ms, box-shadow 150ms;
   text-decoration: none;
 }
@@ -225,14 +232,14 @@ body {
   </div>
 
   <div class="cta-row">
-    <a class="btn-wpp" href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20acabei%20de%20preencher%20o%20formul%C3%A1rio%20do%20site." target="_blank" rel="noopener">
+    <a class="btn-wpp" href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20acabei%20de%20preencher%20o%20formul%C3%A1rio%20do%20site." target="_blank" rel="noopener" title="WhatsApp agência de marketing digital em Curitiba">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
         <path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.106 1.523 5.836L.057 23.571a.75.75 0 00.93.894l5.908-1.547A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 01-4.964-1.358l-.356-.213-3.693.968.988-3.608-.232-.372A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
       </svg>
       Falar no WhatsApp agora
     </a>
-    <a class="link-back" href="index.html">Voltar para o início</a>
+    <a class="link-back" href="index.html" title="Página inicial - Assessoria Atlas">Voltar para o início</a>
   </div>
 
 </div>
@@ -250,15 +257,4 @@ body {
       left: ${Math.random() * 100}%;
       bottom: -10px;
       width: ${size}px;
-      height: ${size}px;
-      animation-duration: ${Math.random() * 8 + 6}s;
-      animation-delay: ${Math.random() * 6}s;
-      opacity: 0;
-    `;
-    bg.appendChild(p);
-  }
-})();
-</script>
-
-</body>
-</html>
+      height: ${siz
