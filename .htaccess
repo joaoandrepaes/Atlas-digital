@@ -1,6 +1,14 @@
 RewriteEngine On
+
+# index e index.html sempre viram raiz (nunca aparece "index" na URL)
+RewriteCond %{THE_REQUEST} \s/+(index)(\.html)?[\s?] [NC]
+RewriteRule ^ /? [R=301,L]
+
+# qualquer outra página .html vira URL limpa (sem .html na barra)
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
+
+# serve o arquivo .html de verdade quando a URL limpa é acessada
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
