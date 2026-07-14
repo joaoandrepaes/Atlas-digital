@@ -780,7 +780,7 @@ h3 {
 .svc-features__grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 2px; background: #1a1a1a; border-radius: 16px; overflow: hidden; }
 .svc-features__grid .svc-feat:nth-child(-n+3) { grid-column: span 2; }
 .svc-features__grid .svc-feat:nth-child(n+4) { grid-column: span 3; }
-@media (max-width: 700px) { .svc-features__grid { grid-template-columns: 1fr !important; } .svc-features__grid .svc-feat { grid-column: span 1 !important; } }
+@media (max-width: 700px) { .svc-features__grid { grid-template-columns: 1fr !important; width: 100% !important; } .svc-features__grid .svc-feat { grid-column: span 1 !important; min-width: 0 !important; width: 100% !important; box-sizing: border-box !important; padding: 28px 20px !important; } }
 /* Tipos de site */
 .svc-types { background: #000; padding: clamp(64px,8vw,104px) 0; border-top: 1px solid #1a1a1a; }
 .svc-types__head { margin-bottom: clamp(36px,5vw,52px); }
