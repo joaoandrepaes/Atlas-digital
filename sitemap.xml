@@ -52,9 +52,16 @@
 
   <url>
     <loc>https://assessoriaatlas.com.br/blog.html</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://assessoriaatlas.com.br/seo-para-pequenas-empresas</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
