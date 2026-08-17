@@ -26,6 +26,7 @@
  <meta property="og:title" content="Criação de Sites, SEO e IA em Curitiba | Assessoria Atlas">
  <meta property="og:description" content="Site profissional em Curitiba, otimizado com SEO para melhor rankeamento.">
  <meta property="og:image" content="https://assessoriaatlas.com.br/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
  <meta property="og:image:width" content="1200">
  <meta property="og:image:height" content="630">
  <meta property="og:image:alt" content="Assessoria Atlas: Criação de Sites e SEO em Curitiba">
@@ -36,7 +37,9 @@
  <link rel="icon" type="image/png" sizes="256x256" href="images/favicon.png?v=2">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+ <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:wght@500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
 
  <style>
 /* =================================================================
@@ -947,6 +950,8 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
 .ba-label { position: absolute; bottom: 10px; background: rgba(0,0,0,.65); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 3px 10px; border-radius: 4px; pointer-events: none; z-index: 4; }
 .ba-label--antes { left: 10px; }
 .ba-label--depois { right: 10px; }
+
+.wpp-float{color:#fff !important}.wpp-float svg{fill:#fff !important;display:block !important}
 </style>
 
  <script type="application/ld+json">
@@ -967,21 +972,167 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  "areaServed": { "@type": "City", "name": "Curitiba" }
  }
  </script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style id="v2-redesign">
+:root{--font-sans:'Sora',ui-sans-serif,system-ui,sans-serif;--font-serif:'Sora',ui-sans-serif,system-ui,sans-serif}
+body,.hero__headline,h1,h2,h3,h4,.btn,input,textarea,button{font-family:'Sora',ui-sans-serif,system-ui,sans-serif !important}
+h1,h2,h3{letter-spacing:-.02em}
+.v2-wave{display:block;width:100%;height:80px}
+/* HERO verde (verde anterior) + contraste/moldura */
+.hero{background:#000 !important}
+.hero .eyebrow{color:rgba(255,255,255,.82) !important}
+.hero__headline{color:#fff !important}
+.hero__sub{color:#cfe0d6 !important}
+.hero .btn--primary{background:#fff !important;color:#0A2C1C !important;box-shadow:none !important}
+.hero .btn--primary:hover{background:#eafff3 !important}
+.hero__img-wrap{background:transparent !important;padding:0 !important;box-shadow:none !important;border:none !important}
+.hero__result-img{border-radius:10px}
+.btn--primary{background:#0e7a22 !important;color:#fff !important}
+.btn--primary:hover{background:#0b6a1e !important}
+.hero .btn--primary,.how .btn--primary,.v2-cta .btn--primary{background:#fff !important;color:#0A2C1C !important}
+.hero .btn--primary:hover,.how .btn--primary:hover,.v2-cta .btn--primary:hover{background:#eafff3 !important}
+
+/* FAIXA PALAVRAS-CHAVE (verde, transição entre seções) */
+.v2-keys{background:#0A2C1C;overflow:hidden;padding:26px 0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.v2-keys__track{display:flex;width:max-content;animation:v2marq 40s linear infinite}
+.v2-keys__set{display:flex;align-items:center}
+.v2-keys__set span{font-size:16px;font-weight:600;color:#dff0e7;white-space:nowrap;padding:0 28px}
+.v2-keys__set i{width:6px;height:6px;border-radius:50%;background:#4f9e77;flex-shrink:0}
+@keyframes v2marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.v2-keys__track{animation:none;flex-wrap:wrap;justify-content:center}}
+
+/* POR QUE (claro) */
+.v2-why{background:#F4F6F3;color:#111;padding:clamp(56px,7vw,88px) 0}
+.v2-why .container{max-width:var(--container);margin:0 auto;padding-inline:var(--container-pad)}
+.v2-why__head{max-width:740px;margin-bottom:46px}
+.v2-why__eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#6b7a6b;margin-bottom:16px;display:block}
+.v2-why__title{font-size:clamp(26px,3vw,42px);font-weight:700;line-height:1.16;color:#111;margin:0 0 14px}
+.v2-why__title span{color:#0e7a22}
+.v2-why__lead{font-size:17px;color:#5f6b5f;line-height:1.6;margin:0}
+.v2-why__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.v2-stat{border-left:1px solid #e0e5dd;padding:4px 26px}
+.v2-stat:first-child{border-left:0;padding-left:0}
+.v2-stat__num{font-size:clamp(34px,3.4vw,44px);font-weight:800;color:#111;line-height:1;margin-bottom:12px;font-variant-numeric:tabular-nums}
+.v2-stat__text{font-size:14px;color:#5f6b5f;line-height:1.55;margin:0}
+.v2-stat__text strong{color:#111;font-weight:600}
+@media(max-width:820px){.v2-why__grid{grid-template-columns:1fr 1fr;gap:30px 0}.v2-stat{border-left:0;padding:0}.v2-stat:nth-child(2n){padding-left:26px;border-left:1px solid #e0e5dd}}
+@media(max-width:520px){.v2-why__grid{grid-template-columns:1fr;gap:26px}.v2-stat{padding:0 !important;border-left:0 !important}}
+
+/* SOLUÇÕES (claro, estilo Conversion) */
+#about.v2-svc{background:#F4F6F3 !important;padding:clamp(48px,6vw,84px) 0 !important}
+.v2-svc .btn--primary{background:#0e7a22 !important;box-shadow:none !important;color:#fff !important}
+.v2-svc .btn--primary:hover{background:#0b6a1e !important}
+.v2-svc .container{max-width:var(--container);margin:0 auto;padding-inline:var(--container-pad)}
+.v2-svc__head{max-width:720px;margin-bottom:38px}
+.v2-svc__eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#6b7a6b;margin-bottom:14px;display:block}
+.v2-svc__title{font-size:clamp(26px,3vw,40px);font-weight:700;color:#111;line-height:1.15;margin:0 0 12px}
+.v2-svc__sub{font-size:17px;color:#5f6b5f;margin:0}
+.v2-pack{display:flex;gap:32px;align-items:center;justify-content:space-between;background:#fff;border:1px solid #e7ebe4;border-radius:16px;padding:clamp(26px,3vw,38px);margin-bottom:20px}
+.v2-pack__badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#0e7a22;background:rgba(14,122,74,.08);padding:5px 12px;border-radius:999px;margin-bottom:12px}
+.v2-pack__title{font-size:23px;font-weight:700;color:#111;margin:0 0 8px}
+.v2-pack__desc{font-size:15px;color:#5f6b5f;line-height:1.6;margin:0 0 16px;max-width:62ch}
+.v2-pack__list{list-style:none;display:flex;gap:10px 24px;flex-wrap:wrap;margin:0;padding:0}
+.v2-pack__list li{position:relative;padding-left:24px;font-size:14px;color:#2c332c;font-weight:500}
+.v2-pack__list li::before{content:'';position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:50%;background:#0e7a22 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='7' viewBox='0 0 10 8'%3E%3Cpath d='M1 4l2.5 2.5L9 1' stroke='%23fff' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center no-repeat}
+.v2-pack__right{flex-shrink:0;display:flex;flex-direction:column;gap:10px;min-width:240px}
+.v2-pack__alt{font-size:12.5px;color:#6b7a6b;text-align:center;margin:0}
+.v2-pack__alt a{color:#111;font-weight:600}
+.v2-svc__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.v2-card{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border:1px solid #e9ece6;border-radius:16px;padding:40px 28px;text-decoration:none;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.v2-card:hover{transform:translateY(-4px);border-color:#d4dbd1;box-shadow:0 20px 42px -30px rgba(20,30,20,.4)}
+.v2-card__ico{width:52px;height:52px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.v2-card__title{font-size:19px;font-weight:700;color:#111;margin:0 0 10px}
+.v2-card__desc{font-size:14.5px;color:#5f6b5f;line-height:1.6;margin:0 0 18px}
+.v2-card__link{font-size:14px;font-weight:600;color:#0e7a22;margin-top:auto}
+@media(max-width:820px){.v2-svc__grid{grid-template-columns:1fr}.v2-pack{flex-direction:column;align-items:flex-start}.v2-pack__right{width:100%;min-width:0}}
+
+/* COMO FUNCIONA (verde, cards com ícone) */
+.how{background:#0A2C1C !important;border-top:none !important}
+.how__heading,.how__bottom-text{color:#fff}
+.how .btn--primary{background:#fff !important;color:#0A2C1C !important;box-shadow:none !important}
+.how .btn--primary:hover{background:#eafff3 !important}
+.v2-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.v2-flow__card{background:#143a28;border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:30px 26px;box-shadow:0 16px 40px -28px rgba(0,0,0,.55);transition:border-color .2s ease,transform .2s ease}
+.v2-flow__card:hover{border-color:rgba(140,220,180,.4);transform:translateY(-4px)}
+.v2-flow__ico{width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(140,220,180,.28);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.v2-flow__step{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#79c99f;margin-bottom:8px}
+.v2-flow__title{font-size:18px;font-weight:700;color:#fff;margin:0 0 8px;line-height:1.3}
+.v2-flow__desc{font-size:14px;color:#a9c6b8;line-height:1.6;margin:0}
+@media(max-width:900px){.v2-flow{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.v2-flow{grid-template-columns:1fr}}
+
+/* CASES (claro) + galeria */
+.cases{background:#F4F6F3 !important;border-top:none !important}
+.cases .section-head h2{color:#111}.cases .section-head .lead{color:#5f6b5f}
+.cases .link-ghost{color:#0e7a22}.cases .link-ghost:hover{color:#111;border-bottom-color:#111}
+.case-card{background:#fff !important;border:1px solid #e6e9e4 !important;border-radius:16px !important;box-shadow:none !important;transition:border-color .2s ease,transform .2s ease}
+.case-card:hover{border-color:#d4dbd1 !important;transform:translateY(-3px)}
+.case-card__name{color:#111}.case-card__seg{color:#8a938a}.case-card__problem{color:#5f6b5f}
+.case-card__result{border-top-color:#eceee9 !important}.case-card__num{color:#0e7a22 !important}.case-card__num-label{color:#5f6b5f}
+.case-card__map-explain{color:#98a098 !important}.geogrid-legend{border-top-color:#eceee9 !important}.geogrid-legend__item{color:#5f6b5f !important}
+.v2-gallery{margin-top:46px}
+.v2-gallery__title{font-size:clamp(20px,2.2vw,26px);font-weight:700;color:#111;margin:0 0 6px;text-align:center}
+.v2-gallery__sub{font-size:15px;color:#5f6b5f;text-align:center;margin:0 0 24px}
+.v2-gallery__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.v2-shot{margin:0;background:#fff;border:1px solid #e6e9e4;border-radius:14px;overflow:hidden;transition:border-color .2s ease,transform .2s ease}
+.v2-shot:hover{border-color:#d4dbd1;transform:translateY(-3px)}
+.v2-shot img{width:100%;height:210px;object-fit:cover;display:block;background:#eef1ec}
+.v2-shot figcaption{font-size:13.5px;color:#55625a;padding:14px 16px;line-height:1.45;border-top:1px solid #eef0ec}
+.v2-shot figcaption b{color:#0e7a22}
+.v2-shot{display:block;text-decoration:none;color:inherit}
+.v2-shot img{object-fit:contain !important;background:#F4F6F3}
+.v2-shot__cap{display:block;font-size:13.5px;color:#55625a;padding:14px 16px;line-height:1.45;border-top:1px solid #eef0ec}
+.v2-shot__cap b{color:#0e7a22}
+.v2-shot--center{grid-column:1/-1;max-width:340px;width:100%;margin-inline:auto}
+.v2-shot .ba-slider__img img{object-fit:cover !important;height:100%}
+.v2-shot--ba .ba-slider{cursor:ew-resize}
+@media(max-width:820px){.v2-gallery__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.v2-gallery__grid{grid-template-columns:1fr}.v2-shot img{height:220px}}
+
+/* CTA (verde) */
+.v2-cta{background:#0A2C1C;padding:clamp(64px,8vw,110px) 0;text-align:left}
+.v2-cta .container{max-width:1120px;margin:0 auto;padding-inline:var(--container-pad)}.v2-cta__grid{display:grid;grid-template-columns:0.82fr 1.18fr;gap:clamp(32px,5vw,64px);align-items:start}.v2-cta__right{max-width:640px}@media(max-width:860px){.v2-cta__grid{grid-template-columns:1fr;gap:18px}}
+.v2-cta__eyebrow{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#79c99f;margin-bottom:22px}
+.v2-cta__title{font-size:clamp(30px,4vw,48px);font-weight:700;color:#fff;line-height:1.12;margin:0}
+.v2-cta__body{margin:0}.v2-cta__body p{font-size:17px;color:#c4d8cc;line-height:1.75;margin:0 0 16px}.v2-cta__body p:last-child{margin-bottom:0}.v2-cta__body strong{color:#fff;font-weight:600}
+.v2-cta__actions{display:flex;gap:14px;justify-content:flex-start;flex-wrap:wrap}
+.v2-cta .btn--primary{background:#fff;color:#0A2C1C;box-shadow:none}
+.v2-cta .btn--primary:hover{background:#eafff3}
+.v2-cta .btn--outline-light{border-color:rgba(255,255,255,.5)}
+
+/* FAQ (claro) */
+.faq{background:#F4F6F3 !important;border-top:none !important}
+.faq__eyebrow{color:#6b7a6b !important;letter-spacing:.16em !important;font-weight:600 !important}
+.faq__title{background:none !important;-webkit-text-fill-color:#111 !important;color:#111 !important}
+.faq__subtitle{color:#5f6b5f !important}
+.faq__list{background:transparent !important;border:none !important;gap:10px !important;overflow:visible !important}
+.faq__item{background:#fff !important;border:1px solid #e6e9e4 !important;border-radius:12px !important;overflow:hidden;transition:border-color .2s ease}
+.faq__item.is-open{border-color:#cfd6cd !important;box-shadow:none !important}
+.faq__q{color:#111 !important}.faq__q:hover{background:#fafbf9 !important}
+.faq__icon{background:#eef1ec !important;color:#5f6b5f !important}
+.faq__item.is-open .faq__icon{background:#e4eae2 !important;color:#0e7a22 !important}
+.faq__a{color:#55625a !important}
+
+/* WhatsApp float sem glow */
+.wpp-float{background:#0e7a22 !important;box-shadow:0 6px 20px rgba(0,0,0,.28) !important;animation:none !important}
+.wpp-float:hover{box-shadow:0 8px 26px rgba(0,0,0,.36) !important}
+</style>
+<style id="img-aspect-fix">img{height:auto}</style>
 </head>
 <body>
 
  <!-- HEADER -->
  <header class="site-header" id="top">
  <div class="site-header__inner">
- <a href="index.html" class="site-header__brand" title="Assessoria Atlas - Agência de SEO em Curitiba">
- <img src="images/NOVA-LOGO-PRETA.webp" alt="Assessoria Atlas" class="site-header__mark" title="Assessoria Atlas - Agência de SEO em Curitiba">
+ <a href="/" class="site-header__brand" title="Assessoria Atlas - Agência de SEO em Curitiba">
+ <img width="480" height="320" src="images/NOVA-LOGO-PRETA.webp" alt="Assessoria Atlas" class="site-header__mark" title="Assessoria Atlas - Agência de SEO em Curitiba">
  </a>
  <nav class="site-header__nav" id="main-nav">
- <a href="index.html" class="site-header__link is-active" title="Página inicial - Assessoria Atlas">Início</a>
- <a href="servicos.html" class="site-header__link" title="Serviços de SEO em Curitiba - Assessoria Atlas">Serviços</a>
- <a href="sobre.html" class="site-header__link" title="Sobre a Assessoria Atlas">Sobre</a><a href="cases.html" class="site-header__link" title="Cases de sucesso Assessoria Atlas">Cases</a>
- <a href="blog.html" class="site-header__link" title="Blog de SEO e marketing digital">Blog</a>
- <a href="contato.html" class="site-header__link" title="Entre em contato com a Assessoria Atlas">Contato</a>
+ <a href="/" class="site-header__link is-active" title="Página inicial - Assessoria Atlas">Início</a>
+ <a href="servicos" class="site-header__link" title="Serviços de SEO em Curitiba - Assessoria Atlas">Serviços</a>
+ <a href="sobre" class="site-header__link" title="Sobre a Assessoria Atlas">Sobre</a><a href="cases" class="site-header__link" title="Cases de sucesso Assessoria Atlas">Cases</a>
+ <a href="blog" class="site-header__link" title="Blog de SEO e marketing digital">Blog</a>
+ <a href="contato" class="site-header__link" title="Entre em contato com a Assessoria Atlas">Contato</a>
  </nav>
  <button class="site-header__menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
@@ -997,7 +1148,7 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <div class="container hero__inner">
  <div class="hero__copy">
  <div class="eyebrow">Mais clientes orgânicos. Sem depender de anúncio.</div>
- <h1 class="hero__headline">O site da sua empresa na 1ª página do Google e nas respostas de IA em Curitiba.</h1>
+ <h1 class="hero__headline">O site da sua empresa na <span style="color:#45c16a">1ª página do Google</span> e nas <span style="color:#45c16a">respostas de IA</span> em Curitiba.</h1>
  <p class="hero__sub">
  Seu cliente está pesquisando agora. Quem ele vai encontrar primeiro: você ou seu concorrente?
  </p>
@@ -1018,137 +1169,35 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  </section>
 
  <!-- BANNER 100% ORGÂNICO -->
- <div class="organic-banner">
- <div class="organic-banner__inner">
- <div class="organic-banner__num">100%</div>
- <div class="organic-banner__body">
- <strong>Orgânico: você não precisa de tráfego pago para conseguir novos clientes.</strong>
- <span>É o cliente te encontrando por conta própria, sempre que ele precisar de você.</span>
- </div>
- <a class="organic-banner__btn" href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20quero%20resultado%20org%C3%A2nico%20no%20Google%20sem%20pagar%20tr%C3%A1fego." target="_blank" rel="noopener" title="WhatsApp agência de marketing digital em Curitiba">
- <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.106 1.523 5.836L.057 23.571a.75.75 0 00.93.894l5.908-1.547A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 01-4.964-1.358l-.356-.213-3.693.968.988-3.608-.232-.372A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
- Quero mais clientes me encontrando
- </a>
- </div>
- </div>
+ 
 
 
 	 <!-- DADOS DE URGÊNCIA -->
-	 <section class="urgencia" id="por-que">
-	  <div class="container">
-	   <header class="section-head urgencia__header-2col">
-	    <div class="urgencia__header-left">
-	     <span class="eyebrow">Por que isso importa</span>
-	     <h2 style="color:#fff;">A busca mudou. Sua empresa precisa aparecer<br>onde o cliente está: no Google e <em class="urgencia-em">nas IAs</em>.</h2>
-	    </div>
-	    <p class="urgencia__lead">Enquanto a maioria das agências ainda só faz SEO, a Assessoria Atlas já posiciona empresas no ChatGPT, Gemini e Perplexity. Somos pioneiros em GEO (Generative Engine Optimization) em Curitiba.</p>
-	   </header>
+	 <div style="background:#000;line-height:0;"><svg class="v2-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 C 480 58 960 58 1440 80 Z" fill="#F4F6F3"/></svg></div>
 
-	   <!-- DESTAQUE: % que não passa da 1ª página -->
-	   <div class="urgencia__page1">
-	    <div class="urgencia__page1-num">75%</div>
-	    <div class="urgencia__page1-text">
-	     <strong>dos usuários nunca passam da 1ª página do Google.</strong>
-	     <span>Se você não está no topo, para eles você simplesmente não existe.</span>
-	    </div>
-	   </div>
+   <section class="v2-why" id="por-que">
+    <div class="container">
+     <header class="v2-why__head">
+      <span class="v2-why__eyebrow">Por que isso importa</span>
+      <h2 class="v2-why__title">A busca mudou. Sua empresa precisa aparecer onde o cliente está: <span>no Google e nas IAs.</span></h2>
+      <p class="v2-why__lead">Enquanto a maioria das agências ainda só faz SEO, a Assessoria Atlas já posiciona empresas no ChatGPT, Gemini e Perplexity. Somos pioneiros em GEO (Generative Engine Optimization) em Curitiba.</p>
+     </header>
+     <div class="v2-why__grid">
+      <div class="v2-stat"><div class="v2-stat__num" data-num="75" data-suffix="%">75%</div><p class="v2-stat__text"><strong>dos usuários nunca passam da 1ª página do Google.</strong> Se você não está no topo, para eles você simplesmente não existe.</p></div>
+      <div class="v2-stat"><div class="v2-stat__num" data-num="96" data-suffix="%">96%</div><p class="v2-stat__text"><strong>te procuram no Google antes de ligar.</strong> Se sua empresa não aparece, você perde o contato antes mesmo dele acontecer.</p></div>
+      <div class="v2-stat"><div class="v2-stat__num" data-num="45" data-suffix="%">45%</div><p class="v2-stat__text"><strong>confiam mais em quem aparece bem posicionado.</strong> Pra quase metade do seu mercado, aparecer bem é sinal de confiança.</p></div>
+      <div class="v2-stat"><div class="v2-stat__num" data-num="140" data-suffix="M">140M</div><p class="v2-stat__text"><strong>mensagens que brasileiros mandam pra IA todo dia.</strong> Gente perguntando qual empresa contratar. Inclusive seu próximo cliente.</p></div>
+     </div>
+    </div>
+   </section>
 
-	   <div class="urgencia__grid">
-	    <div class="urgencia__stat">
-	     <div class="urgencia__num">96%</div>
-	     <div class="urgencia__label">dos seus futuros clientes te procuram no Google antes de ligar</div>
-	     <div class="urgencia__sub">Se sua empresa não aparece, você perde o contato antes mesmo dele acontecer.</div>
-	    </div>
-	    <div class="urgencia__stat">
-	     <div class="urgencia__num">45%</div>
-	     <div class="urgencia__label">confiam mais em quem aparece bem posicionado no Google</div>
-	     <div class="urgencia__sub">Pra quase metade do seu mercado, aparecer bem é sinal de que dá pra confiar em você.</div>
-	    </div>
-	    <div class="urgencia__stat urgencia__stat--dark">
-	     <div class="urgencia__num urgencia__num--light">140M</div>
-	     <div class="urgencia__label urgencia__label--light">mensagens que brasileiros mandam pra IA todo dia</div>
-	     <div class="urgencia__sub urgencia__sub--light">Gente perguntando pra IA qual empresa contratar. Inclusive seu próximo cliente.</div>
-	    </div>
-	   </div>
-	  </div>
-	 </section>
+   <section class="v2-keys" aria-label="Palavras-chave dos serviços"><div class="v2-keys__track"><div class="v2-keys__set"><span>SEO</span><i></i><span>GEO</span><i></i><span>Criação de Sites</span><i></i><span>Rankeamento no Google</span><i></i><span>1ª página do Google</span><i></i><span>Respostas das IAs</span><i></i><span>Diminuir o CAC</span><i></i></div><div class="v2-keys__set" aria-hidden="true"><span>SEO</span><i></i><span>GEO</span><i></i><span>Criação de Sites</span><i></i><span>Rankeamento no Google</span><i></i><span>1ª página do Google</span><i></i><span>Respostas das IAs</span><i></i><span>Diminuir o CAC</span><i></i></div></div></section>
 
 
  <!-- NOSSAS SOLUÇÕES -->
- <section id="about">
- <div class="why__wrap">
- <div class="why__layout">
+ <section id="about" class="v2-svc"><div class="container"><header class="v2-svc__head"><span class="v2-svc__eyebrow">Nossas soluções</span><h2 class="v2-svc__title">O que você precisa para aparecer e ser escolhido.</h2><p class="v2-svc__sub">Três frentes. Contrate uma ou as três.</p></header><div class="v2-pack"><div class="v2-pack__left"><span class="v2-pack__badge">Mais escolhido</span><h3 class="v2-pack__title">Pacote Completo</h3><p class="v2-pack__desc">Os três serviços juntos: o caminho mais rápido para aparecer no Google de verdade.</p><ul class="v2-pack__list"><li>Google Meu Negócio</li><li>Posicionamento no Google e IAs</li><li>Criação de Sites</li></ul></div><div class="v2-pack__right"><a class="btn btn--primary" href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20quero%20contratar%20o%20Pacote%20Completo%20e%20entender%20como%20funciona." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:8px" title="WhatsApp agência de marketing digital em Curitiba"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.106 1.523 5.836L.057 23.571a.75.75 0 00.93.894l5.908-1.547A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>Quero o pacote completo</a><p class="v2-pack__alt">Prefere um serviço só? <a href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20um%20dos%20servi%C3%A7os%20e%20quero%20saber%20qual%20o%20ideal." target="_blank" rel="noopener" title="WhatsApp agência de marketing digital em Curitiba">Fala com a gente →</a></p></div></div><div class="v2-svc__grid"><a class="v2-card" href="servico-criacao-sites" title="Criação de Sites com SEO em Curitiba - Assessoria Atlas"><span class="v2-card__ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0e7a22" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M9 21h6"/></svg></span><h3 class="v2-card__title">Criação de Sites</h3><p class="v2-card__desc">Corrigimos velocidade, estrutura e indexação para o Google entender e priorizar suas páginas.</p><span class="v2-card__link">Quero saber mais →</span></a><a class="v2-card" href="servico-posicionamento-google-ia" title="Posicionamento no Google e nas IAs em Curitiba - Assessoria Atlas"><span class="v2-card__ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0e7a22" stroke-width="1.6"><path d="M3 20h18"/><path d="M6 20v-5M12 20V7M18 20v-9"/></svg></span><h3 class="v2-card__title">Posicionamento no Google e IAs</h3><p class="v2-card__desc">Textos estratégicos escritos para aparecer no Google e convencer quem chega até você.</p><span class="v2-card__link">Quero saber mais →</span></a><a class="v2-card" href="servico-google-meu-negocio" title="Gestão de Google Meu Negócio em Curitiba - Assessoria Atlas"><span class="v2-card__ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0e7a22" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><h3 class="v2-card__title">Google Meu Negócio</h3><p class="v2-card__desc">Perfil e Maps otimizados. Apareça quando o cliente está perto e pronto para comprar.</p><span class="v2-card__link">Quero saber mais →</span></a></div></div></section>
 
- <!-- Cabeçalho: ocupa colunas 1+2 -->
- <div class="why__header">
- <span class="why__eyebrow">Nossas Soluções</span>
- <h2>O que você precisa<br>para aparecer<br><span style="color:var(--atlas-green)">e ser escolhido.</span></h2>
- <p>Três frentes. Contrate uma ou as três.</p>
- </div>
-
- <!-- Pacote Completo: horizontal, colunas 2+3, linha 1 -->
- <div class="why-card why-card--pacote">
- <div class="pacote-left">
- <span class="pacote-badge">Mais escolhido</span>
- <h3 class="pacote-title">Pacote Completo</h3>
- <p class="pacote-desc">Os três serviços juntos: o caminho mais rápido para aparecer no Google de verdade.</p>
- <ul class="pacote-list">
- <li>Google Meu Negócio</li>
- <li>Posicionamento no Google e IAs</li>
- <li>Criação de Sites</li>
- </ul>
- </div>
- <div class="pacote-right">
- <a class="btn btn--primary" href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20quero%20contratar%20o%20Pacote%20Completo%20(Google%20Meu%20Neg%C3%B3cio%20%2B%20Posicionamento%20no%20Google%20e%20IAs%20%2B%20Cria%C3%A7%C3%A3o%20de%20Sites)%20e%20entender%20como%20funciona." target="_blank" rel="noopener" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:6px" title="Falar no WhatsApp sobre o Pacote Completo - Assessoria Atlas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Quero o pacote completo</a>
- <p class="pacote-alt">Prefere um serviço só? <a href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20um%20dos%20servi%C3%A7os%20da%20Assessoria%20Atlas%20e%20quero%20saber%20qual%20%C3%A9%20o%20ideal%20pro%20meu%20caso." target="_blank" rel="noopener" title="Falar no WhatsApp - Assessoria Atlas">Fala com a gente →</a></p>
- </div>
- </div>
-
- <!-- Card 1: Criação de Sites linha 2, coluna 1 -->
- <div class="why-card">
- <div class="why-card__icon">
- <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
- <rect width="52" height="52" rx="5" fill="url(#wc3_grad)"/>
- <path d="M37.03 13.17L11.68 27.80C10.69 28.37 10.82 29.75 11.80 30.16L17.62 32.60L33.33 18.75C33.63 18.48 34.06 18.90 33.80 19.21L20.63 35.26V39.66C20.63 40.95 22.18 41.46 22.95 40.52L26.42 36.30L33.24 39.15C34.01 39.48 34.90 38.99 35.04 38.16L38.98 14.53C39.16 13.43 37.98 12.63 37.03 13.17Z" fill="white"/>
- <defs><linearGradient id="wc3_grad" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#00C170"/><stop offset="1" stop-color="#00916A"/></linearGradient></defs>
- </svg>
- </div>
- <h3>Criação de Sites</h3>
- <p>Corrigimos <strong>velocidade, estrutura e indexação</strong> para o Google entender e priorizar suas páginas.</p>
- <a href="servico-criacao-sites.html" class="why-card__link" title="Saiba mais: Criação de Sites com SEO em Curitiba">Quero saber mais →</a>
- </div>
-
- <!-- Card 2: Conteúdo linha 2, coluna 2 -->
- <div class="why-card">
- <div class="why-card__icon">
- <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
- <rect width="52" height="52" rx="5" fill="url(#wc2_grad)"/>
- <path d="M36 16H16C14.9 16 14 16.9 14 18V34C14 35.1 14.9 36 16 36H36C37.1 36 38 35.1 38 34V18C38 16.9 37.1 16 36 16ZM20 32H18V28H20V32ZM20 26H18V22H20V26ZM20 20H18V18H20V20ZM34 32H22V30H34V32ZM34 28H22V26H34V28ZM34 24H22V22H34V24ZM34 20H22V18H34V20Z" fill="white"/>
- <defs><linearGradient id="wc2_grad" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#00C170"/><stop offset="1" stop-color="#00916A"/></linearGradient></defs>
- </svg>
- </div>
- <h3>Posicionamento no Google e IAs</h3>
- <p><strong>Textos estratégicos</strong> escritos para aparecer no Google e convencer quem chega até você.</p>
- <a href="servico-posicionamento-google-ia.html" class="why-card__link" title="Saiba mais: Posicionamento no Google e nas IAs">Quero saber mais →</a>
- </div>
-
- <!-- Card 3: Google Meu Negócio linha 2, coluna 3 -->
- <div class="why-card">
- <div class="why-card__icon">
- <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
- <rect width="52" height="52" rx="5" fill="url(#wc1_grad)"/>
- <path d="M26 14C21.58 14 18 17.58 18 22C18 27.5 26 38 26 38C26 38 34 27.5 34 22C34 17.58 30.42 14 26 14ZM26 25C24.34 25 23 23.66 23 22C23 20.34 24.34 19 26 19C27.66 19 29 20.34 29 22C29 23.66 27.66 25 26 25Z" fill="white"/>
- <defs><linearGradient id="wc1_grad" x1="0" y1="0" x2="52" y2="52" gradientUnits="userSpaceOnUse"><stop stop-color="#00C170"/><stop offset="1" stop-color="#00916A"/></linearGradient></defs>
- </svg>
- </div>
- <h3>Google Meu Negócio</h3>
- <p><strong>Perfil e Maps otimizados</strong>. Apareça quando o cliente está perto e pronto para comprar.</p>
- <a href="servico-google-meu-negocio.html" class="why-card__link" title="Saiba mais: Google Meu Negócio em Curitiba">Quero saber mais →</a>
- </div>
-
- </div>
- </div>
- </section>
+ <div style="background:#F4F6F3;line-height:0;"><svg class="v2-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 480 22 960 22 1440 0 L1440 80 L0 80 Z" fill="#0A2C1C"/></svg></div>
 
  <!-- COMO FUNCIONA -->
  <section class="how" id="como-funciona">
@@ -1159,56 +1208,9 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <h2 class="how__heading">Do diagnóstico ao resultado em 4 passos simples.</h2>
  </div>
 
- <div class="how__body">
- <div class="how__steps-col">
- <h3 class="how__steps-title">Etapas do processo:</h3>
- <p class="how__steps-sub">Sem burocracia, sem enrolação. Você acompanha cada etapa com transparência total.</p>
+ <p style="text-align:center;color:#a9c6b8;font-size:16px;max-width:640px;margin:0 auto 26px;line-height:1.6">Sem burocracia, sem enrolação. Você acompanha cada etapa com transparência total.</p><div class="v2-flow"><div class="v2-flow__card"><div class="v2-flow__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7fd3a6" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div><div class="v2-flow__step">Passo 01</div><h3 class="v2-flow__title">Diagnóstico Gratuito</h3><p class="v2-flow__desc">Analisamos seu site, seus concorrentes e seu Google Meu Negócio: sem custo.</p></div><div class="v2-flow__card"><div class="v2-flow__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7fd3a6" stroke-width="1.7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3M8 11h8M8 15h5"/></svg></div><div class="v2-flow__step">Passo 02</div><h3 class="v2-flow__title">Plano Personalizado</h3><p class="v2-flow__desc">Você recebe um plano claro com o que será feito, por quê e quando.</p></div><div class="v2-flow__card"><div class="v2-flow__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7fd3a6" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></div><div class="v2-flow__step">Passo 03</div><h3 class="v2-flow__title">Execução Completa</h3><p class="v2-flow__desc">SEO, site e Google Meu Negócio trabalhando juntos para você aparecer primeiro.</p></div><div class="v2-flow__card"><div class="v2-flow__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7fd3a6" stroke-width="1.7"><path d="M4 20h16"/><path d="M7 20v-6M12 20V8M17 20v-9"/></svg></div><div class="v2-flow__step">Passo 04</div><h3 class="v2-flow__title">Relatório Mensal</h3><p class="v2-flow__desc">Você acompanha o crescimento todo mês com dados reais e sem enrolação.</p></div></div>
 
- <div class="how-iconbox">
- <div class="how-iconbox__num">01</div>
- <div class="how-iconbox__content">
- <h3 class="how-iconbox__title">Diagnóstico Gratuito</h3>
- <p class="how-iconbox__desc">Analisamos seu site, seus concorrentes e seu Google Meu Negócio: sem custo.</p>
- </div>
- </div>
-
- <div class="how-iconbox">
- <div class="how-iconbox__num">02</div>
- <div class="how-iconbox__content">
- <h3 class="how-iconbox__title">Plano Personalizado</h3>
- <p class="how-iconbox__desc">Você recebe um plano claro com o que será feito, por quê e quando.</p>
- </div>
- </div>
-
- <div class="how-iconbox">
- <div class="how-iconbox__num">03</div>
- <div class="how-iconbox__content">
- <h3 class="how-iconbox__title">Execução Completa</h3>
- <p class="how-iconbox__desc">SEO, site e Google Meu Negócio trabalhando juntos para você aparecer primeiro.</p>
- </div>
- </div>
-
- <div class="how-iconbox">
- <div class="how-iconbox__num">04</div>
- <div class="how-iconbox__content">
- <h3 class="how-iconbox__title">Relatório Mensal</h3>
- <p class="how-iconbox__desc">Você acompanha o crescimento todo mês com dados reais e sem enrolação.</p>
- </div>
- </div>
- </div>
-
- <div class="how__illus-col">
- <img
- src="images/consultoria-site-seo-curitiba.webp"
- alt="Consultoria de SEO em Curitiba resultado real de cliente Assessoria Atlas"
- class="how__illus-svg"
- width="460"
- loading="lazy"
- style="border-radius:16px;" title="Consultoria de SEO em Curitiba: resultado real de cliente Assessoria Atlas">
- </div>
- </div>
-
- <div class="how__bottom">
+  <div class="how__bottom">
  <h2 class="how__bottom-text">Quer saber como nosso processo pode transformar sua presença no Google? Fale com a gente agora.</h2>
  <a class="btn btn--primary" href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20quero%20saber%20por%20onde%20come%C3%A7ar%20a%20aparecer%20no%20Google." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;" title="WhatsApp agência de marketing digital em Curitiba"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Quero saber por onde começar</a>
  </div>
@@ -1217,6 +1219,8 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  </section>
 
  <!-- CASES -->
+ <div style="background:#0A2C1C;line-height:0;"><svg class="v2-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 C 480 58 960 58 1440 80 Z" fill="#F4F6F3"/></svg></div>
+
  <section class="cases" id="cases">
  <div class="container">
  <header class="section-head">
@@ -1224,7 +1228,7 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <p class="lead">Sem print editado. Sem número inventado.</p>
  </header>
  <div style="margin-bottom:16px;">
- <a href="cases.html" class="link-ghost" title="Cases de sucesso - Assessoria Atlas">Ver todos os cases →</a>
+ <a href="cases" class="link-ghost" title="Cases de sucesso - Assessoria Atlas">Ver todos os cases →</a>
  </div>
  <div class="cases__grid">
 
@@ -1233,10 +1237,10 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <div class="case-card__img">
  <div class="ba-slider" role="group" aria-label="Comparação antes e depois: Moreschi Engenharia">
   <div class="ba-slider__img">
-  <img src="images/google-depois.webp" alt="Moreschi Engenharia no topo do Google após SEO em Curitiba" title="Depois da otimização: Moreschi Engenharia" loading="lazy">
+  <img width="1920" height="1080" src="images/google-depois.webp" alt="Moreschi Engenharia no topo do Google após SEO em Curitiba" title="Depois da otimização: Moreschi Engenharia" loading="lazy">
   </div>
   <div class="ba-slider__img ba-slider__before">
-  <img src="images/google-antes.webp" alt="Antes: Moreschi Engenharia no Google" title="Antes da otimização: Moreschi Engenharia" loading="lazy">
+  <img width="1920" height="1080" src="images/google-antes.webp" alt="Antes: Moreschi Engenharia no Google" title="Antes da otimização: Moreschi Engenharia" loading="lazy">
   </div>
   <input type="range" class="ba-slider__range" min="0" max="100" value="50" aria-label="Arrastar para comparar antes e depois">
   <div class="ba-slider__handle"></div>
@@ -1264,7 +1268,7 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <!-- Case 2: CT Via Venuto -->
  <div class="case-card">
  <div class="case-card__img">
- <img
+ <img width="1473" height="1080"
  src="images/resultado-resposta-google-ia.webp"
  alt="Aparecer na resposta Google IA: CT Via Venuto e Assessoria Atlas" title="Resultado nas respostas do Google IA: CT Via Venuto e Assessoria Atlas" loading="lazy">
  </div>
@@ -1280,6 +1284,14 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  </div>
 
  </div>
+ <div class="v2-gallery"><h3 class="v2-gallery__title">Mais resultados reais</h3><p class="v2-gallery__sub">Prints direto das ferramentas do Google e das IAs. Sem edição.</p><div class="v2-gallery__grid">
+<a class="v2-shot" href="cases" title="Ver todos os cases - Assessoria Atlas"><img width="1400" height="622" src="images/topo-google-maps-preparatorio.webp" alt="Preparatorio de Curitiba em 1o lugar no Google Maps para aulas de vestibular" title="1o lugar no Google Maps em Curitiba" loading="lazy"><span class="v2-shot__cap"><b>1&ordm; lugar no Google Maps.</b> Um preparat&oacute;rio de Curitiba aparece no topo para &ldquo;aulas para vestibular&rdquo; &mdash; &agrave; frente de concorrentes maiores, com nota 5,0.</span></a>
+<div class="v2-shot v2-shot--ba"><div class="ba-slider" role="group" aria-label="Comparacao antes e depois no Google Maps"><div class="ba-slider__img"><img width="752" height="592" src="images/grid-preparatorio-depois.webp" alt="Grid do Google Maps quase todo verde, negocio no topo em Curitiba um mes depois" loading="lazy"></div><div class="ba-slider__img ba-slider__before"><img width="752" height="592" src="images/grid-preparatorio-antes.webp" alt="Grid do Google Maps todo vermelho, negocio invisivel em Curitiba antes" loading="lazy"></div><input type="range" class="ba-slider__range" min="0" max="100" value="50" aria-label="Arraste para comparar antes e depois"><div class="ba-slider__handle"></div><span class="ba-label ba-label--antes">Antes</span><span class="ba-label ba-label--depois">Depois</span></div><a class="v2-shot__cap" href="cases" title="Ver todos os cases - Assessoria Atlas"><b>De invis&iacute;vel ao topo em ~1 m&ecirc;s.</b> Arraste para comparar: o grid saiu de &ldquo;20+&rdquo; (vermelho, fora do mapa) para 1&ordm; e 2&ordm; lugar (verde) em quase toda Curitiba.</a></div>
+<a class="v2-shot" href="cases" title="Ver todos os cases - Assessoria Atlas"><img width="1083" height="1080" src="images/resultado-resposta-ia-chat-gpt.webp" alt="ChatGPT citando o negocio nas respostas quando perguntam pela solucao" title="Citado nas respostas do ChatGPT" loading="lazy"><span class="v2-shot__cap"><b>Citado pelo ChatGPT.</b> Quando algu&eacute;m pergunta pela solu&ccedil;&atilde;o, a IA recomenda o cliente pelo nome.</span></a>
+<a class="v2-shot" href="cases" title="Ver todos os cases - Assessoria Atlas"><img width="747" height="213" src="images/rotas-preparatorio-google.webp" alt="Solicitacoes de rota no Perfil da Empresa do Google subindo 253,8 por cento" title="+253,8% em solicitacoes de rota" loading="lazy"><span class="v2-shot__cap"><b>+253,8% em pedidos de rota.</b> 92 pessoas tra&ccedil;aram o caminho at&eacute; o cliente direto pelo perfil no Google.</span></a>
+<a class="v2-shot" href="cases" title="Ver todos os cases - Assessoria Atlas"><img width="858" height="197" src="images/interacoes-preparatorio-google.webp" alt="Interacoes no Perfil da Empresa do Google subindo 101,9 por cento" title="+101,9% em interacoes no perfil" loading="lazy"><span class="v2-shot__cap"><b>+101,9% em intera&ccedil;&otilde;es.</b> 107 a&ccedil;&otilde;es no perfil &mdash; ligar, tra&ccedil;ar rota, abrir o site &mdash; em um &uacute;nico m&ecirc;s.</span></a>
+<a class="v2-shot" href="cases" title="Ver todos os cases - Assessoria Atlas"><img width="1000" height="333" src="images/visualizacoes-perfil-preparatorio.webp" alt="Visualizacoes do Perfil da Empresa no Google subindo 57 por cento" title="+57% em visualizacoes do perfil" loading="lazy"><span class="v2-shot__cap"><b>+57% em visualiza&ccedil;&otilde;es.</b> 2.567 pessoas viram o perfil do neg&oacute;cio no Google &mdash; sem depender de an&uacute;ncio pago.</span></a>
+</div></div>
  <div style="text-align:center; margin-top:40px;">
  <a href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20quero%20ser%20um%20case%20de%20sucesso%20da%20Assessoria%20Atlas%21" class="btn btn--primary" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;" title="WhatsApp agência de marketing digital em Curitiba"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Quero ser um case de sucesso</a>
  </div>
@@ -1287,38 +1299,20 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  </div>
  </section>
 
+ <div style="background:#F4F6F3;line-height:0;"><svg class="v2-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 480 22 960 22 1440 0 L1440 80 L0 80 Z" fill="#0A2C1C"/></svg></div>
+
  <!-- CTA FINAL -->
- <section class="cta-final" id="cta">
- <div class="cta-final__card">
+ <section class="v2-cta" id="cta"><div class="container">
+   <div class="v2-cta__grid"><div class="v2-cta__left"><span class="v2-cta__eyebrow">Diagnóstico gratuito · 30 minutos</span>
+   <h2 class="v2-cta__title">Seu concorrente já está aparecendo. E você?</h2></div><div class="v2-cta__right">
+   <div class="v2-cta__body"><p>Enquanto você lê isso, tem gente pesquisando no Google e nas IAs exatamente o que a sua empresa faz em Curitiba. Alguém vai aparecer nessa busca — a questão é se vai ser <strong>você ou o concorrente do lado</strong>.</p><p>E quase sempre a decisão acontece ali, na primeira tela, antes de qualquer ligação ou mensagem. Se você não está bem posicionado, não é que você perde a venda: você nem entra na disputa. O pior é que dá pra perder cliente todo dia sem nunca ficar sabendo.</p><p>No <strong>diagnóstico gratuito</strong> eu analiso o seu site, o seu Google Meu Negócio e os seus concorrentes, e te mostro onde você está perdendo posição e o que dá pra fazer pra virar o jogo. São 30 minutos, sem compromisso e sem enrolação — se fizer sentido, a gente segue junto; se não, você sai com um diagnóstico claro na mão de qualquer forma.</p></div>
+   <div class="v2-cta__actions">
+    <a href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20quero%20meu%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener" class="btn btn--primary" style="display:inline-flex;align-items:center;gap:8px;" title="WhatsApp agência de marketing digital em Curitiba"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.554 4.106 1.523 5.836L.057 23.571a.75.75 0 00.93.894l5.908-1.547A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>Quero meu diagnóstico agora</a>
+    <a href="contato" class="btn btn--outline-light" title="Entre em contato - Assessoria Atlas">Prefiro pelo formulário</a>
+   </div></div></div>
+  </div></section>
 
- <!-- Coluna esquerda: badge giratório -->
- <div class="cta-badge">
- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="cta-badge__svg" aria-hidden="true">
- <defs>
- <path id="badgePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"/>
- </defs>
- <text>
- <textPath href="#badgePath" class="cta-badge__text">DIAGNÓSTICO GRATUITO • 30 MINUTOS • DIAGNÓSTICO GRATUITO • 30 MINUTOS • </textPath>
- </text>
- </svg>
- <div class="cta-badge__center">
- <span class="cta-badge__num">30</span>
- <span class="cta-badge__label">minutos</span>
- </div>
- </div>
-
- <!-- Coluna direita: texto + CTA -->
- <div class="cta-final__content">
- <h2 class="cta-final__title">Seu concorrente já está aparecendo.<br><span>E você?</span></h2>
- <p class="cta-final__sub">Enquanto você lê isso, alguém está pesquisando o que você faz em Curitiba, e encontrando outra empresa. O diagnóstico é gratuito e leva 30 minutos.</p>
- <div style="display:flex; gap:14px; flex-wrap:wrap;">
- <a href="https://wa.me/5541987485953?text=Ol%C3%A1%2C%20vi%20que%20meus%20concorrentes%20j%C3%A1%20est%C3%A3o%20aparecendo%20no%20Google%20e%20eu%20n%C3%A3o.%20Quero%20saber%20como%20resolver%20isso%20com%20o%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener" class="btn btn--primary" style="display:inline-flex;align-items:center;gap:8px;" title="WhatsApp agência de marketing digital em Curitiba"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Quero meu diagnóstico agora</a>
- <a href="contato.html" class="btn btn--outline-light" title="Solicitar diagnóstico de site gratuito - Assessoria Atlas">Prefiro pelo formulário</a>
- </div>
- </div>
-
- </div>
- </section>
+ <div style="background:#0A2C1C;line-height:0;"><svg class="v2-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 C 480 58 960 58 1440 80 Z" fill="#F4F6F3"/></svg></div>
 
  <!-- FAQ -->
  <section class="faq" id="faq">
@@ -1401,7 +1395,7 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <footer class="site-footer" id="contato">
  <div class="container site-footer__inner">
  <div class="site-footer__brand">
- <a href="index.html" title="Assessoria Atlas"><img src="images/NOVA-LOGO-PRETA.webp" alt="Assessoria Atlas" class="site-footer__mark" title="Assessoria Atlas - Agência de SEO em Curitiba"></a>
+ <a href="/" title="Assessoria Atlas"><img width="480" height="320" src="images/NOVA-LOGO-PRETA.webp" alt="Assessoria Atlas" class="site-footer__mark" title="Assessoria Atlas - Agência de SEO em Curitiba"></a>
  <div>
  <div class="site-footer__tag">Posicionamento orgânico para negócios locais.</div>
  </div>
@@ -1409,20 +1403,20 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <div class="site-footer__col">
  <div class="site-footer__col-title">Navegar</div>
  <ul>
- <li><a href="index.html" title="Página inicial - Assessoria Atlas">Início</a></li>
- <li><a href="servicos.html" title="Ver serviços de SEO em Curitiba - Assessoria Atlas">Serviços</a></li>
- <li><a href="sobre.html" title="Conheça a Assessoria Atlas - Agência de SEO em Curitiba">Sobre</a></li>
- <li><a href="cases.html" title="Cases de sucesso - Assessoria Atlas">Cases</a></li>
- <li><a href="blog.html" title="Blog de SEO e Marketing Digital - Assessoria Atlas">Blog</a></li>
- <li><a href="contato.html" title="Entre em contato - Assessoria Atlas">Contato</a></li>
+ <li><a href="/" title="Página inicial - Assessoria Atlas">Início</a></li>
+ <li><a href="servicos" title="Ver serviços de SEO em Curitiba - Assessoria Atlas">Serviços</a></li>
+ <li><a href="sobre" title="Conheça a Assessoria Atlas - Agência de SEO em Curitiba">Sobre</a></li>
+ <li><a href="cases" title="Cases de sucesso - Assessoria Atlas">Cases</a></li>
+ <li><a href="blog" title="Blog de SEO e Marketing Digital - Assessoria Atlas">Blog</a></li>
+ <li><a href="contato" title="Entre em contato - Assessoria Atlas">Contato</a></li>
  </ul>
  </div>
  <div class="site-footer__col">
  <div class="site-footer__col-title">Serviços</div>
  <ul>
- <li><a href="servico-google-meu-negocio.html" title="Google Meu Negócio em Curitiba - Assessoria Atlas">Google Meu Negócio</a></li>
- <li><a href="servico-criacao-sites.html" title="Criação de Sites com SEO em Curitiba - Assessoria Atlas">Criação de Sites</a></li>
- <li><a href="servico-posicionamento-google-ia.html" title="Posicionamento no Google e nas IAs - Assessoria Atlas">Google e IAs</a></li>
+ <li><a href="servico-google-meu-negocio" title="Google Meu Negócio em Curitiba - Assessoria Atlas">Google Meu Negócio</a></li>
+ <li><a href="servico-criacao-sites" title="Criação de Sites com SEO em Curitiba - Assessoria Atlas">Criação de Sites</a></li>
+ <li><a href="servico-posicionamento-google-ia" title="Posicionamento no Google e nas IAs - Assessoria Atlas">Google e IAs</a></li>
  </ul>
  </div>
  <div class="site-footer__col">
@@ -1445,7 +1439,7 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
  <!-- LIGHTBOX -->
  <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
  <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&#x2715;</button>
- <img id="lightbox-img" src="" alt="">
+ <img id="lightbox-img" src="" alt="Imagem do case ampliada" title="Imagem do case ampliada - Assessoria Atlas">
  </div>
 
  <script>
@@ -1505,5 +1499,9 @@ if (menuBtn && mainNav) {
  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
  </svg>
 </a>
+<script>
+(function(){function anim(el){var n=parseFloat(el.getAttribute('data-num')),suf=el.getAttribute('data-suffix')||'';var d=1400,s=null;function step(t){if(!s)s=t;var p=Math.min((t-s)/d,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(n*e)+suf;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+var done=false,g=document.querySelector('.v2-why__grid');if(g&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting&&!done){done=true;document.querySelectorAll('.v2-stat__num').forEach(anim);}});},{threshold:.35});io.observe(g);}})();
+</script>
 </body>
 </html>
