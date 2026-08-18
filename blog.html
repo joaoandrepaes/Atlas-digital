@@ -689,6 +689,9 @@ h3 {
 .blog-card__excerpt { font-size: 13px; color: #a3a3a3; line-height: 1.55; margin: 0 0 14px; }
 .blog-card__link { font-size: 12px; font-weight: 700; color: #22C55E; letter-spacing: 0.05em; text-decoration: none; margin-top: auto; }
 .blog-card__link:hover { color: #fff; }
+.blog-sections{display:flex;flex-direction:column;gap:44px;}
+.blog-sec{scroll-margin-top:160px;}
+.blog-sec__title{font-size:24px;color:#0A2C1C;font-weight:700;margin:0 0 20px;padding-bottom:10px;border-bottom:2px solid var(--atlas-green);display:inline-block;letter-spacing:-.01em;}
 
 </style>
 <script type="application/ld+json">
@@ -823,15 +826,18 @@ body{background:#0A2C1C !important}
  </div>
  <div class="blog-cat-title">Categorias</div>
  <ul class="blog-cats">
- <li><a href="#" class="is-active" title="Assessoria Atlas">Todos</a></li>
- <li><a href="#" title="Artigos de SEO - Assessoria Atlas">SEO</a></li>
+ <li><a href="#sec-seo" class="is-active" title="Todos os artigos">Todos</a></li>
+ <li><a href="#sec-seo" title="Artigos de SEO">SEO</a></li>
+ <li><a href="#sec-gmn" title="Artigos de Google Meu Negócio">Google Meu Negócio</a></li>
  </ul>
  </aside>
 
- <!-- GRID DE POSTS -->
- <div class="blog-grid">
- <h2 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Artigos recentes sobre SEO em Curitiba</h2>
+ <!-- SEÇÕES POR ASSUNTO -->
+ <div class="blog-sections">
 
+ <section class="blog-sec" id="sec-seo">
+ <h2 class="blog-sec__title">SEO</h2>
+ <div class="blog-grid">
  <article class="blog-card">
  <a href="por-que-minha-empresa-nao-aparece-no-google" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;" title="Por que sua empresa não aparece no Google">
  <div class="blog-card__img" style="position:relative;">
@@ -861,8 +867,30 @@ body{background:#0A2C1C !important}
  </div>
  </a>
  </article>
+ </div>
+ </section>
 
- </div><!-- /blog-grid -->
+ <section class="blog-sec" id="sec-gmn">
+ <h2 class="blog-sec__title">Google Meu Negócio</h2>
+ <div class="blog-grid">
+ <article class="blog-card">
+ <a href="google-meu-negocio" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;" title="Google Meu Negócio: como cadastrar sua empresa grátis">
+ <div class="blog-card__img" style="position:relative;">
+ <img width="1200" height="800" src="images/google-meu-negocio-capa.webp" alt="Google Meu Negócio: como cadastrar sua empresa grátis" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" loading="lazy" title="Google Meu Negócio">
+ <span class="blog-card__cat" style="position:relative;z-index:2;">Google Meu Negócio</span>
+ </div>
+ <div class="blog-card__body">
+ <div class="blog-card__date">Agosto 2026</div>
+ <h3 class="blog-card__title">Google Meu Negócio: como cadastrar sua empresa grátis</h3>
+ <p class="blog-card__excerpt">O jeito mais rápido e de graça de colocar seu negócio no Google e no mapa. Passo a passo, sem tecniquês.</p>
+ <span class="blog-card__link">LEIA MAIS &gt;&gt;</span>
+ </div>
+ </a>
+ </article>
+ </div>
+ </section>
+
+ </div>
  </div><!-- /blog-layout -->
  </div>
 
