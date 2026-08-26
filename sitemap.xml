@@ -52,7 +52,7 @@
 
   <url>
     <loc>https://assessoriaatlas.com.br/blog</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -83,5 +83,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://assessoriaatlas.com.br/otimizar-google-meu-negocio</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 
 </urlset>
