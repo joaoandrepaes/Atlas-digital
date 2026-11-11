@@ -719,8 +719,8 @@ body{overflow-x:clip;}
 .post-layout{max-width:1060px;margin:0 auto;padding:28px var(--container-pad) 80px;display:grid;grid-template-columns:210px 1fr;gap:44px;align-items:start;}
 @media(max-width:680px){.post-layout{grid-template-columns:1fr;gap:22px;}}
 /* SUMÁRIO fixo à esquerda (sticky) */
-.post-toc{position:sticky;top:160px;align-self:start;}
-@media(max-width:680px){.post-toc{position:static;top:auto;border-bottom:1px solid #e5e5e5;padding-bottom:14px;}}
+.post-toc{position:sticky;top:160px;align-self:start;max-height:calc(100vh - 190px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#cfd8d3 transparent;padding-right:6px;}
+@media(max-width:680px){.post-toc{position:static;top:auto;max-height:none;overflow:visible;border-bottom:1px solid #e5e5e5;padding-bottom:14px;}}
 .post-toc__label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#111;margin-bottom:14px;}
 .post-toc__list{display:flex;flex-direction:column;gap:2px;}
 @media(max-width:680px){.post-toc__list{flex-direction:row;flex-wrap:wrap;gap:6px;}}
@@ -971,8 +971,10 @@ if (sumarioLinks.length) {
  var links=[].slice.call(document.querySelectorAll('.post-toc__link'));
  if(!links.length)return;
  var secs=links.map(function(l){return document.querySelector(l.getAttribute('href'));}).filter(Boolean);
- function upd(){var cur=secs[0];secs.forEach(function(sx){if(window.scrollY>=sx.offsetTop-180)cur=sx;});
- links.forEach(function(l){l.classList.toggle('is-active',cur&&l.getAttribute('href')==='#'+cur.id);});}
+ function upd(){var cur=secs[0];secs.forEach(function(sx){if(window.scrollY>=sx.getBoundingClientRect().top+window.scrollY-180)cur=sx;});
+ links.forEach(function(l){l.classList.toggle('is-active',cur&&l.getAttribute('href')==='#'+cur.id);});
+ var toc=document.querySelector('.post-toc'),a=document.querySelector('.post-toc__link.is-active');
+ if(toc&&a&&toc.scrollHeight>toc.clientHeight){var top=toc.scrollTop,t=a.getBoundingClientRect().top-toc.getBoundingClientRect().top+top;if(t<top+40||t>top+toc.clientHeight-80)toc.scrollTop=t-toc.clientHeight/3;}}
  window.addEventListener('scroll',upd,{passive:true});upd();
 })();
 </script>
