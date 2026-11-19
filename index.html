@@ -24,7 +24,7 @@
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://assessoriaatlas.com.br/">
  <meta property="og:title" content="Criação de Sites, SEO e IA em Curitiba | Assessoria Atlas">
- <meta property="og:description" content="Site profissional em Curitiba, otimizado com SEO para melhor rankeamento.">
+ <meta property="og:description" content="Criação de sites profissionais com SEO em Curitiba. Seu site no Google e nas respostas de IA, sem precisar de tráfego pago. Análise gratuita.">
  <meta property="og:image" content="https://assessoriaatlas.com.br/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
  <meta property="og:image:width" content="1200">
@@ -43,7 +43,7 @@
 
  <style>
 /* =================================================================
- ATLAS DIGITAL design system (do site antigo)
+ ASSESSORIA ATLAS design system
  ================================================================= */
 :root {
  --atlas-black: #000000;
@@ -955,23 +955,119 @@ em.urgencia-em { font-style: normal; color: var(--atlas-green); }
 </style>
 
  <script type="application/ld+json">
- {
+{
  "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "Assessoria Atlas",
- "logo": "https://assessoriaatlas.com.br/images/NOVA-LOGO-SIMBOLO.png",
- "image": "https://assessoriaatlas.com.br/images/NOVA-LOGO-PRETA.webp",
- "description": "Criação de sites e SEO em Curitiba. Sites profissionais já otimizados pra ranquear na primeira página do Google e nas respostas das IAs.",
- "url": "https://assessoriaatlas.com.br",
- "telephone": "+55-41-98748-5953",
- "priceRange": "$$",
- "address": { "@type": "PostalAddress", "addressLocality": "Curitiba", "addressRegion": "PR", "addressCountry": "BR" },
- "geo": { "@type": "GeoCoordinates", "latitude": "-25.4284", "longitude": "-49.2733" },
- "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
- "founder": { "@type": "Person", "name": "João André Paes" },
- "areaServed": { "@type": "City", "name": "Curitiba" }
- }
- </script>
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://assessoriaatlas.com.br/#empresa",
+   "name": "Assessoria Atlas",
+   "url": "https://assessoriaatlas.com.br",
+   "slogan": "Seja encontrado. No topo do Google e das IAs.",
+   "description": "Criação de sites e SEO em Curitiba. Sites profissionais já otimizados pra ranquear na primeira página do Google e nas respostas das IAs.",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://assessoriaatlas.com.br/images/NOVA-LOGO-SIMBOLO.png"
+   },
+   "image": "https://assessoriaatlas.com.br/images/NOVA-LOGO-PRETA.webp",
+   "telephone": "+55-41-98748-5953",
+   "email": "contato@assessoriaatlas.com.br",
+   "priceRange": "$$",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Curitiba",
+    "addressRegion": "PR",
+    "addressCountry": "BR"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Curitiba"
+    },
+    {
+     "@type": "Country",
+     "name": "Brasil"
+    }
+   ],
+   "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "18:00"
+   },
+   "founder": {
+    "@type": "Person",
+    "@id": "https://assessoriaatlas.com.br/#joao-andre",
+    "name": "João André Paes",
+    "url": "https://assessoriaatlas.com.br/sobre"
+   },
+   "sameAs": [
+    "https://www.instagram.com/joaoandre.seo/",
+    "https://www.youtube.com/@joaoandreSEO",
+    "https://www.linkedin.com/company/assessoria-atlas-seo/"
+   ],
+   "knowsAbout": [
+    "SEO",
+    "GEO",
+    "Google Meu Negócio",
+    "Criação de sites"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://assessoriaatlas.com.br/#joao-andre",
+   "name": "João André Paes",
+   "alternateName": [
+    "João André",
+    "SEO com João",
+    "João André Martins de Vasconcelos Paes"
+   ],
+   "jobTitle": "Fundador e especialista em SEO e GEO",
+   "url": "https://assessoriaatlas.com.br/sobre",
+   "worksFor": {
+    "@type": "ProfessionalService",
+    "@id": "https://assessoriaatlas.com.br/#empresa",
+    "name": "Assessoria Atlas",
+    "url": "https://assessoriaatlas.com.br"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/jo%C3%A3o-andr%C3%A9-martins-de-vasconcelos-paes/",
+    "https://www.instagram.com/joaoandre.seo/",
+    "https://www.youtube.com/@joaoandreSEO"
+   ],
+   "knowsAbout": [
+    "SEO",
+    "GEO",
+    "Google Meu Negócio",
+    "Criação de sites",
+    "Marketing Digital"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Curitiba",
+    "addressRegion": "PR",
+    "addressCountry": "BR"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://assessoriaatlas.com.br/#website",
+   "url": "https://assessoriaatlas.com.br",
+   "name": "Assessoria Atlas",
+   "inLanguage": "pt-BR",
+   "publisher": {
+    "@id": "https://assessoriaatlas.com.br/#empresa"
+   }
+  }
+ ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style id="v2-redesign">
 :root{--font-sans:'Sora',ui-sans-serif,system-ui,sans-serif;--font-serif:'Sora',ui-sans-serif,system-ui,sans-serif}
@@ -1425,12 +1521,15 @@ h1,h2,h3{letter-spacing:-.02em}
  <li><a href="https://wa.me/5541987485953" title="WhatsApp agência de marketing digital em Curitiba">WhatsApp · (41) 98748-5953</a></li>
  <li><a href="mailto:contato@assessoriaatlas.com.br" title="Enviar e-mail para a Assessoria Atlas">contato@assessoriaatlas.com.br</a></li>
  <li>Curitiba · PR</li>
+ <li><a href="https://www.instagram.com/joaoandre.seo/" rel="me noopener" target="_blank" title="Instagram de João André Paes, Assessoria Atlas">Instagram · @joaoandre.seo</a></li>
+ <li><a href="https://www.youtube.com/@joaoandreSEO" rel="me noopener" target="_blank" title="Canal SEO com João no YouTube, Assessoria Atlas">YouTube · SEO com João</a></li>
+ <li><a href="https://www.linkedin.com/company/assessoria-atlas-seo/" rel="me noopener" target="_blank" title="Assessoria Atlas no LinkedIn">LinkedIn · Assessoria Atlas</a></li>
  </ul>
  </div>
  </div>
  <div class="site-footer__bar">
  <div class="container site-footer__bar-inner">
- <span>© 2026 Assessoria Atlas. Posicionamento orgânico para negócios locais.</span>
+ <span>© 2026 Assessoria Atlas · por João André Paes. Posicionamento orgânico para negócios locais.</span>
  <span>Curitiba · PR · Brasil</span>
  </div>
  </div>
